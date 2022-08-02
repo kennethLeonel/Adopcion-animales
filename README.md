@@ -6,13 +6,13 @@ El proyecto consiste en brindar mediante un sitio web dedicado a facilitar la ad
 
 Descripción del equipo:
 
--Juan Pablo Acosta:
+-Juan Pablo Acosta: hola chicos soy Juan Pablo Acosta, tengo 24 años, soy de Buenos Aires, Argentina, a mi me gusta hacer ejercicio, jugar videojuegos
 
--Kristhian Rojas:
+-Kristhian Rojas: Soy Kristhian Rojas, tengo 27 años, vivo en Bogota, Colombia. Soy cordinador logistico. Me gusta manejar cicla, la cocina y los gatos.
 
--Sofia Triaca:
+-Sofia Triaca: Soy Sofía Triaca, tengo 26 años y soy de Montevideo, Uruguay.  Soy Licenciada en Diseño Grafico. Me gusta la fotografia y cocinar. Como me gusta seguir aprendiendo y desarollandome en mi carrera. Me entusiasma aprender programación.
 
--Kenneth David Leonel:
+-Kenneth David Leonel: Bueno chicos soy Kenneth David Leonel Triana, tengo 21 años y medio, soy de Bogotá Colombia, si se trata de mis hobbies me gusta escribir poemas, jugar videojuegos, soy muy hogareño, en cuanto a lo demás soy estudiante de ingeniería
 
 Herramientas utilizadas en el proyecto:
 
