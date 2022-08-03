@@ -16,7 +16,7 @@ Descripción del equipo:
 
 Herramientas utilizadas en el proyecto:
 
-- Html, Css.
+- HTML5, CSS3, JavaScript con el framework de React
 
 Listado de referencias para el diseño del proyecto:
   1. https://www.fundaciontepa.org/adopta/
@@ -24,8 +24,11 @@ Listado de referencias para el diseño del proyecto:
     es el navegador, la opción de adoptar, requisitos para poder adoptar al animalito.
   2. https://www.behance.net/gallery/90712891/Pewos-Diseno-de-sitio-de-adopcion-de-perros?tracking_source=search_projects%7Cadopcion
     Este diseño nos ayudo a tener una referencia minimalista del aplicativo, una forma responsive del diseño  que podemos acoger.
-  4.https://www.behance.net/gallery/120218931/Pet-Adoption-Web-Design?tracking_source=search_projects%7Cadoption%20pet
-  5. https://www.animalesbog.gov.co/cliff/index.html#amigos
-  6. https://www.animalessinhogar.com.uy/#/
+  3. https://www.behance.net/gallery/120218931/Pet-Adoption-Web-Design?tracking_source=search_projects%7Cadoption%20pet
+      Una referencia más basica de lo que podriamos incluir.
+  4. https://www.animalesbog.gov.co/cliff/index.html#amigos
+      Es una página gubernamental de Colombia especificamente de Bogotá que ayuda a poder facilitar la adopcion de mascotas
+  5. https://www.animalessinhogar.com.uy/#/
+      Página de una fundación Uruguaya, referente para paleta de colores o diseño. 
 
 
