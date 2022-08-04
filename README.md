@@ -29,6 +29,7 @@ Listado de referencias para el diseño del proyecto:
   4. https://www.animalesbog.gov.co/cliff/index.html#amigos
       Es una página gubernamental de Colombia especificamente de Bogotá que ayuda a poder facilitar la adopcion de mascotas
   5. https://www.animalessinhogar.com.uy/#/
-      Página de una fundación Uruguaya, referente para paleta de colores o diseño. 
+      Página de una fundación Uruguaya, referente para paleta de colores o para tener un diseño sencillo y limpio. 
+      
 
 
