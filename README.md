@@ -41,11 +41,13 @@ Listado de referencias para el diseño del proyecto:
   <a href ="https://miro.com/app/board/uXjVOicEj8o=/"> MIRO</a>
  </p>
  
+ <section>
+  <h2>Wireframes</h2>
  <div>
-    <h2>Wireframes</h2>
-    <p> <img src="./Wireframes/Registro.jpg"></p>
-  
- </div>
-      
-
+    <p>Registrar usuario</p>
+    <img src="./Wireframes/Registro.jpg">
+     <p>Registrar usuario version móvil</p>
+    <img src="./Wireframes/Registro.jpg">
+ </div>   
+</section>
 
