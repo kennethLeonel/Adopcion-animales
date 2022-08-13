@@ -31,5 +31,15 @@ Listado de referencias para el diseño del proyecto:
   5. https://www.animalessinhogar.com.uy/#/
       Página de una fundación Uruguaya, referente para paleta de colores o para tener un diseño sencillo y limpio. 
       
+      
+ <h1>Parte sofia </h1>
+ 
+ <h1>Tablero de actividades</h1>
+ 
+ 
+ <p>Enlace a miro 
+  <a href ="https://miro.com/app/board/uXjVOicEj8o=/"> MIRO</a>
+ </p>
+      
 
 
