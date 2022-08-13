@@ -69,7 +69,7 @@
  
  <h2>Tablero de actividades</h2>
  
- <p>Enlace a miro 
+ <p>Enlace a miro donde se colocaran las respectivas actividades a realizar
   <a href ="https://miro.com/app/board/uXjVOicEj8o=/"> MIRO</a>
  </p>
  
