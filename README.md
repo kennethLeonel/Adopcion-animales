@@ -47,20 +47,20 @@
   <section >
        <h2>Listado de referencias para el diseño del proyecto:</h2>
       <ol>
-        <li> <a href="https://www.fundaciontepa.org/adopta/">fundaciontepa</a>
+        <li> <a href="https://www.fundaciontepa.org/adopta/">fundación tepa</a>
           <p> El diseño del sitio nos aporto una visión amplia sobre la distribución de los topicos a realizar, como lo 
           es el navegador, la opción de adoptar, requisitos para poder adoptar al animalito. </p>
         </li>
         <li> <a href="https://www.behance.net/gallery/90712891/Pewos-Diseno-de-sitio-de-adopcion-de-perros?tracking_source=search_projects%7Cadopcion"> Pewos</a>
         <p> Este diseño nos ayudo a tener una referencia minimalista del aplicativo, una forma responsive del diseño  que podemos acoger. </p>
         </li>
-        <li> <a href=" https://www.behance.net/gallery/120218931/Pet-Adoption-Web-Design?tracking_source=search_projects%7Cadoption%20pet"> Pet-Adoption</a>
+        <li> <a href="https://www.behance.net/gallery/120218931/Pet-Adoption-Web-Design?tracking_source=search_projects%7Cadoption%20pet"> Pet-Adoption</a>
         <p>  Una referencia más basica de lo que podriamos incluir. </p>
         </li>
-        <li> <a href=" https://www.animalesbog.gov.co/cliff/index.html#amigos">animalesbog </a>
+        <li> <a href="https://www.animalesbog.gov.co/cliff/index.html#amigos">Animales Bogotá </a>
         <p>  Es una página gubernamental de Colombia especificamente de Bogotá que ayuda a poder facilitar la adopcion de mascotas </p>
         </li>
-        <li> <a href="https://www.animalessinhogar.com.uy/#/"> animalessinhogar</a>
+        <li> <a href="https://www.animalessinhogar.com.uy/#/">Animales sin hogar</a>
         <p>  Página de una fundación Uruguaya, referente para paleta de colores o para tener un diseño sencillo y limpio. </p>
         </li>
       </ol>
