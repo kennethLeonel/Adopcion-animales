@@ -32,14 +32,20 @@ Listado de referencias para el diseño del proyecto:
       Página de una fundación Uruguaya, referente para paleta de colores o para tener un diseño sencillo y limpio. 
       
       
- <h1>Parte sofia </h1>
+ <h2>Parte sofia </h2>
  
- <h1>Tablero de actividades</h1>
+ <h2>Tablero de actividades</h2>
  
  
  <p>Enlace a miro 
   <a href ="https://miro.com/app/board/uXjVOicEj8o=/"> MIRO</a>
  </p>
+ 
+ <div>
+    <h2>Wireframes</h2>
+    <p> <img src="./Wireframes/Registro.jpg"></p>
+  
+ </div>
       
 
 
