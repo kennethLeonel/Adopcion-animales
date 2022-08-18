@@ -1,0 +1,24 @@
+{
+  "name": "adopcion-animales",
+  "version": "1.0.0",
+  "description": "<h1>Nombre del proyecto. (por definir) </h1>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennethLeonel/Adopcion-animales.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennethLeonel/Adopcion-animales/issues"
+  },
+  "homepage": "https://github.com/kennethLeonel/Adopcion-animales#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
