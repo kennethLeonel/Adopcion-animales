@@ -1,3 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+    Paleta de colores
+    celeste : #4dabab 
+    verde : #94be68
+    amarrillo: #f1bd45
+    naranja: #e3894b
+
+    lOGO : Falta 
+
+*/
+
 body{
+    background-color:  #4dabab;
+}
+
+/* Estilo Footer */
+footer{
     background-color: #eb7d7d;
 }
+
+/* Estilo Header */
+header{
+    background-color: #eb7d7d;
+}
+
+
+/* Estilos index.html Home + Gallery */
+
+
+
+
+/* Estilos DetallesMascota.html  */
+
+
+
+/* Estilos CarritoMascota.html */
+
+
+
+/* Estilos Login.html */
+
+
+
+/* Estilos Registro.html */

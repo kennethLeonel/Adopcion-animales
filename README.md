@@ -71,6 +71,8 @@
  
  <p>Enlace a miro donde se colocaran las respectivas actividades a realizar
   <a href ="https://miro.com/app/board/uXjVOicEj8o=/"> MIRO</a>
+  <a href ="https://trello.com/invite/b/e2Pqyiwj/707202f9d449100d8bcfadf16f10e9ce/adopcion-animales-digital-house"> Trello</a>
+
  </p>
  
  <section>
