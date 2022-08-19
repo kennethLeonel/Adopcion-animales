@@ -36,7 +36,10 @@ header{
 
 /* Estilos DetallesMascota.html  */
 
+#menu-detalle-mascota{display: flex;
+justify-content: space-between;
 
+}
 
 /* Estilos CarritoMascota.html */
 
