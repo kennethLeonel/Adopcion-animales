@@ -15,7 +15,34 @@
 */
 
 body{
+   
+}
+/* Estilo Header */
+header{
+   
     background-color:  #4dabab;
+
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.contenedorImagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap:wrap;
+    align-items: center;
+
+}
+
+.logo{
+    width : 100%;
+}
+.navbarLista{
+    display: none;
 }
 
 /* Estilo Footer */
@@ -23,10 +50,7 @@ footer{
     background-color: #eb7d7d;
 }
 
-/* Estilo Header */
-header{
-    background-color: #eb7d7d;
-}
+
 
 
 /* Estilos index.html Home + Gallery */
@@ -50,3 +74,38 @@ justify-content: space-between;
 
 
 /* Estilos Registro.html */
+
+
+@media  (min-width: 640px){
+
+
+    /* Estilo Header */
+
+    .navbarLista{
+        display: flex;
+        justify-content: space-between; 
+       
+    }
+    .navbarLista li{
+        list-style: none;
+        margin: 20px 15px;
+        font-size: 18px;
+         text-decoration: none;
+        font-weight: bold; 
+          
+    
+    }
+    
+    .navbarLista li a{
+       
+        color: #f1bd45;
+        text-decoration: none;
+        transition: 1s all;
+    }
+    .navbarLista li a:hover{
+        color: #94be68;
+        text-decoration: underline;
+        
+    }
+
+}
