@@ -3,30 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 
+/*
     Paleta de colores
-    celeste : #4dabab 
+    celeste : #4dabab
     verde : #94be68
     amarrillo: #f1bd45
     naranja: #e3894b
 
-    lOGO : Falta 
+    lOGO : Falta
 
 */
 
 body{
-   
+min-height: 100vh;
+width: 100vw;
+
 }
 /* Estilo Header */
 header{
-   
+
     background-color:  #4dabab;
 
 }
 .header-container{
     display: flex;
     justify-content: space-between;
-    
+
 
 }
 .contenedorImagen{
@@ -47,15 +49,114 @@ header{
 
 /* Estilo Footer */
 footer{
-    background-color: #eb7d7d;
+    background-color: #4dabab;
 }
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-container div{
+    margin-top: 10px ;
+}
+.redesSociales{
+    display: flex;
+    
 
+}
+.redesSociales p{
+    margin: 0 10px;
 
+}
+.redesSociales p a {
+    color: #f1bd45;
+    text-decoration: none;
+    transition: 2s all;
+
+}
+.redesSociales p a:hover{
+    color: #94be68;
+    text-decoration: underline;
+}
+.redesSociales p a i {
+    margin-right: 10px;
+}
+.footer-derechos{
+    color: #f1bd45;
+    font-size: 16px;
+}
+.footer-autores{
+    color: #f1bd45;
+}
+.footer-autores p a {
+    color: #f1bd45;
+    text-decoration: none;
+    transition: 1s all;
+}
+.footer-autores p a:hover{
+    color: #94be68;
+    text-decoration: underline;
+}
 
 
 /* Estilos index.html Home + Gallery */
 
+.titulo{
+    font-size: 40px;
+    /* color: #f1bd45; */
+    text-align: center;
 
+    margin-bottom: 10px;
+
+}
+
+.main-section-introduccion{
+    border: 2px solid #f1bd45;
+
+    padding: 50px;
+    background-image:url(/img/backgroundMainHome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.9;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover ;
+    ;
+    z-index: auto;
+    background-attachment: scroll; */
+    /* background-attachment: fixed; */
+
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+.contenido-introduccion{
+    padding: 20px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.contenido-introduccion p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #e7e9db;
+    font-weight: bold;
+    text-align: justify;
+}
+.boton{
+    margin-top: 10px;
+    background-color: #f1bd45;
+    width: 40%;
+    align-self: end;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s all;
+}
+.boton:hover{
+    background-color: #94be68;
+    transform: scale(0.98);
+}
 
 
 /* Estilos DetallesMascota.html  */
@@ -76,28 +177,28 @@ justify-content: space-between;
 /* Estilos Registro.html */
 
 
-@media  (min-width: 640px){
+@media  (min-width: 768px){
 
 
     /* Estilo Header */
 
     .navbarLista{
         display: flex;
-        justify-content: space-between; 
-       
+        justify-content: space-between;
+
     }
     .navbarLista li{
         list-style: none;
         margin: 20px 15px;
         font-size: 18px;
          text-decoration: none;
-        font-weight: bold; 
-          
-    
+        font-weight: bold;
+
+
     }
-    
+
     .navbarLista li a{
-       
+
         color: #f1bd45;
         text-decoration: none;
         transition: 1s all;
@@ -105,7 +206,31 @@ justify-content: space-between;
     .navbarLista li a:hover{
         color: #94be68;
         text-decoration: underline;
-        
-    }
 
+    }
+    /* Footer */
+
+
+    /* index.html */
+    .contenido-introduccion{
+        padding: 20px;
+        width: 40%;
+        display:flex;
+        flex-direction: column;
+    }
+    .contenido-introduccion p{
+        margin-top: 10px;
+        font-size: 18px;
+    
+        text-align: justify;
+    }
+    .boton{
+        margin-top: 10px;
+        background-color: #f1bd45;
+     
+        align-self: end;
+        border-radius: 5px;
+        padding: 5px;
+        transition: 1s all;
+    }
 }
