@@ -158,6 +158,41 @@ footer{
     transform: scale(0.98);
 }
 
+.main-section-animalitos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contenedor-input-wrapper{
+    display: flex;
+    justify-content: end;
+}
+.input-wrapper{
+  max-width: 520px;
+  min-width: 250px;
+  width: 40%;
+  position: relative;
+  margin-right: 5px;
+  
+
+}
+.input-wrapper input{
+    padding: 0.5rem;
+    width: 100%;
+    
+}
+.icon-imput{
+    position: absolute;
+    display: block;
+    bottom: .5rem;
+    right: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+.icon-imput a {
+    text-decoration: none;
+    color: #000;
+}
+
 
 /* Estilos DetallesMascota.html  */
 
