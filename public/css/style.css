@@ -61,7 +61,7 @@ footer{
 }
 .redesSociales{
     display: flex;
-    
+
 
 }
 .redesSociales p{
@@ -162,6 +162,25 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.contendedor-dropdown{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#animalitos{
+    margin-right: 20px ;
+}
+.boton2{
+    background-color: #f1bd45;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s all;
+}
+.boton2:hover{
+    background-color: #94be68;
+    transform: scale(0.98);
+}
 .contenedor-input-wrapper{
     display: flex;
     justify-content: end;
@@ -171,14 +190,12 @@ footer{
   min-width: 250px;
   width: 40%;
   position: relative;
-  margin-right: 5px;
-  
-
+  margin-right: 20px;
 }
 .input-wrapper input{
     padding: 0.5rem;
     width: 100%;
-    
+
 }
 .icon-imput{
     position: absolute;
@@ -191,6 +208,40 @@ footer{
 .icon-imput a {
     text-decoration: none;
     color: #000;
+}
+/*--------------------Galeria------------*/
+.container-animales{
+    display: flex;
+    justify-content: center;
+}
+.contenedor-animalitos-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap : 30px  ;
+    margin-top: 30px;
+
+}
+.animalito-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    box-shadow: #000 0px 0px 5px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 5px;
+    transition: 1s all;
+
+
+}
+.animalito-card:hover{
+    transform: scale(1.02);
+}
+.animalito-img-cards{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
 }
 
 
@@ -256,16 +307,25 @@ justify-content: space-between;
     .contenido-introduccion p{
         margin-top: 10px;
         font-size: 18px;
-    
+
         text-align: justify;
     }
     .boton{
         margin-top: 10px;
         background-color: #f1bd45;
-     
+
         align-self: end;
         border-radius: 5px;
         padding: 5px;
         transition: 1s all;
+    }
+    .contenedor-animalitos-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap : 30px  ;
+        margin-top: 30px;
+        width: 100%;
     }
 }
