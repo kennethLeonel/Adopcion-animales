@@ -247,11 +247,10 @@ footer{
 
 /* Estilos DetallesMascota.html  */
 
-#menu-detalle-mascota{display: flex;
+.menu-detalle-mascota{display: flex;
 justify-content: space-between;
-
 }
-
+.info-animal{margin:auto;}
 /* Estilos CarritoMascota.html */
 
 
