@@ -38,11 +38,14 @@ header{
     justify-content: center;
     flex-wrap:wrap;
     align-items: center;
+    flex-grow: 1;
 
 }
 
 .logo{
-    width : 100%;
+    width : 20%;
+
+
 }
 .navbarLista{
     display: none;
