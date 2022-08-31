@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 /*
     Paleta de colores
@@ -19,7 +20,7 @@ min-height: 100vh;
 width: 100vw;
 
 }
-/* Estilo Header */
+/* Estilos Header */
 header{
 
     background-color:  #4dabab;
@@ -47,7 +48,7 @@ header{
     display: none;
 }
 
-/* Estilo Footer */
+/* Estilos Footer */
 footer{
     background-color: #4dabab;
 }
@@ -210,39 +211,49 @@ footer{
     color: #000;
 }
 /*--------------------Galeria------------*/
+
+
 .container-animales{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-.contenedor-animalitos-cards{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     gap : 30px  ;
     margin-top: 30px;
-
+    align-items: center;
+    box-sizing: border-box;
+}
+.animalito-img-cards{
+    width: 230px;
+    max-width: 270px;
+    height: 220px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 .animalito-card{
     display: flex;
+    max-width: 270px;
+    height: 370px;
     flex-direction: column;
     align-items: center;
     background-color: azure;
     box-shadow: #000 0px 0px 5px;
     border-radius: 10px;
-    padding: 10px;
-    gap: 5px;
+    padding: 15px;
+    gap: 15px;
     transition: 1s all;
-
-
+    box-sizing: border-box;
+   
 }
 .animalito-card:hover{
     transform: scale(1.02);
 }
-.animalito-img-cards{
-    width: 100%;
-    height: 220px;
-    border-radius: 10px;
+.container-ajustarAnimales{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
+
 
 
 /* Estilos DetallesMascota.html  */
@@ -312,19 +323,23 @@ justify-content: space-between;
     .boton{
         margin-top: 10px;
         background-color: #f1bd45;
-
         align-self: end;
         border-radius: 5px;
         padding: 5px;
         transition: 1s all;
     }
-    .contenedor-animalitos-cards{
+    .container-animales{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap : 30px  ;
-        margin-top: 30px;
-        width: 100%;
+       
+        gap: 20px;
     }
+    .animalito-card{
+        flex: 0 0 33.333333%;
+    }
+
+    
+
 }
+
