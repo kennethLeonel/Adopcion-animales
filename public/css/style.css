@@ -37,18 +37,16 @@ header{
     flex-direction: column;
     justify-content: center;
     flex-wrap:wrap;
-    align-items: center;
     flex-grow: 1;
-
 }
 
 .logo{
-    width : 20%;
-
-
+    width : 40%;
 }
 .navbarLista{
     display: none;
+   
+
 }
 
 /* Estilos Footer */
@@ -252,9 +250,10 @@ footer{
     transform: scale(1.02);
 }
 .container-ajustarAnimales{
-    width: 90%;
+    width: 80%;
     display: block;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 
@@ -284,6 +283,7 @@ justify-content: space-between;
     .navbarLista{
         display: flex;
         justify-content: space-between;
+        
 
     }
     .navbarLista li{
@@ -342,7 +342,14 @@ justify-content: space-between;
         flex: 0 0 33.333333%;
     }
 
-    
+    .logo{
+        width : 33%;
+    }
 
 }
 
+@media  (min-width: 1100px){
+    .logo{
+        width : 20%;
+    }
+}
