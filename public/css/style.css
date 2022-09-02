@@ -263,8 +263,8 @@ footer{
 .menu-detalle-mascota{display: flex;
 justify-content: space-between;
 }
-.info-animal{text-align: center;} 
-.detalle-title{text-align: center;}
+.info-animal{text-align: center;color: #f1bd45;} 
+.detalle-title{text-align: center; }
 .animalito-img-cards-detalle{
     width: 30px;
     max-width: 30px;
@@ -290,16 +290,26 @@ justify-content: space-between;
         transform: scale(0.98);}
         
 .info-principal{display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap:wrap;
+    justify-content:center;
     flex-direction:row;
-    gap : 30px  ;
+    gap:30px;
     margin-top: 30px;
-    align-items: center;
-    box-sizing: border-box;}
-
-
-
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
+.image-principal i{
+    width: 30px;
+   vertical-align:100px;
+    transition: 1s all;
+    border: solid;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.image-principal i:hover{
+   background-color:#4dabab;
+}
 /* Estilos CarritoMascota.html */
 
 
