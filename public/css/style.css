@@ -312,6 +312,48 @@ justify-content: space-between;
 }
 /* Estilos CarritoMascota.html */
 
+.main-section-carro {
+width: 100%;
+border: 2px ;
+padding: 50px;
+background-image:url(/img/fondocarro-01.png);
+background-size: cover;
+background-position: center center;
+margin-bottom: 20px;
+}
+
+.contenido-carro {
+    padding: 100px;
+    margin: 20px;   
+
+}
+
+.info-carro{
+    margin-left: 650px;
+    font-size: 18px;
+    color: #e7e9db;
+    font-weight: bold;
+    text-align: justify;
+
+}
+
+.boton-iniciar{ 
+    text-align: right; 
+    background-color: #4dabab;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s all;}
+.boton-iniciar:hover{ background-color: #ffffff;
+        transform: scale(0.98);}
+
+ .boton-registro{ 
+    text-align: right; 
+    background-color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+            transition: 1s all;}
+.boton-registro:hover{ background-color: #4dabab;
+                transform: scale(0.98);}
 
 
 /* Estilos Login.html */
