@@ -263,7 +263,7 @@ footer{
 .menu-detalle-mascota{display: flex;
 justify-content: space-between;
 }
-.info-animal{text-align: center;color: #f1bd45;} 
+.info-animal{text-align: center;color: #f1bd45;background-color: #008000;} 
 .detalle-title{text-align: center; }
 .animalito-img-cards-detalle{
     width: 30px;
@@ -285,6 +285,7 @@ justify-content: space-between;
 .boton-details{ text-align: right; background-color: #f1bd45;
     border-radius: 5px;
     padding: 5px;
+    
     transition: 1s all;}
 .boton-details:hover{ background-color: #94be68;
         transform: scale(0.98);}
@@ -293,9 +294,8 @@ justify-content: space-between;
     flex-wrap:wrap;
     justify-content:center;
     flex-direction:row;
-    gap:30px;
-    margin-top: 30px;
-    margin-bottom: 100px;
+    gap:30px; 
+     margin-top: 135px;  
     box-sizing: border-box;
 }
 .image-principal i{
