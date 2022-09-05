@@ -263,7 +263,7 @@ footer{
 .menu-detalle-mascota{display: flex;
 justify-content: space-between;
 }
-.info-animal{text-align: center;color: #f1bd45;background-color: #008000;} 
+.info-animal{text-align: center;color: #f1bd45;background-color:#2271b3 ;} 
 .detalle-title{text-align: center; }
 .animalito-img-cards-detalle{
     width: 30px;
