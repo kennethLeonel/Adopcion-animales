@@ -431,25 +431,27 @@ margin-bottom: 20px;
 
 
 
-.body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .center{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
     width: 400px;
     background: white;
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
     
+}
+
+.registro-main{
+    background: url('/img/backgroundMainHome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.9;
+    height: 100vh;
 }
 
 .center h1{
