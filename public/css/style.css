@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 
+    text-decoration: none;
 }
 /*
     Paleta de colores
@@ -21,7 +22,7 @@ min-height: 100vh;
 width: 100vw;
 
 }
-/* Estilo Header */
+/* Estilos Header */
 header{
 
     background-color:  #4dabab;
@@ -38,18 +39,19 @@ header{
     flex-direction: column;
     justify-content: center;
     flex-wrap:wrap;
-    align-items: center;
-
+    flex-grow: 1;
 }
 
 .logo{
-    width : 100%;
+    width : 40%;
 }
 .navbarLista{
     display: none;
+   
+
 }
 
-/* Estilo Footer */
+/* Estilos Footer */
 footer{
     background-color: #4dabab;
 }
@@ -212,50 +214,148 @@ footer{
     color: #000;
 }
 /*--------------------Galeria------------*/
+
+
 .container-animales{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-.contenedor-animalitos-cards{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     gap : 30px  ;
     margin-top: 30px;
-
+    align-items: center;
+    box-sizing: border-box;
+}
+.animalito-img-cards{
+    width: 230px;
+    max-width: 270px;
+    height: 220px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 .animalito-card{
     display: flex;
+    max-width: 270px;
+    height: 370px;
     flex-direction: column;
     align-items: center;
     background-color: azure;
     box-shadow: #000 0px 0px 5px;
     border-radius: 10px;
-    padding: 10px;
-    gap: 5px;
+    padding: 15px;
+    gap: 15px;
     transition: 1s all;
-
-
+    box-sizing: border-box;
+   
 }
 .animalito-card:hover{
     transform: scale(1.02);
 }
-.animalito-img-cards{
-    width: 100%;
-    height: 220px;
-    border-radius: 10px;
+.container-ajustarAnimales{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
 }
+
 
 
 /* Estilos DetallesMascota.html  */
 
-#menu-detalle-mascota{display: flex;
+.menu-detalle-mascota{display: flex;
 justify-content: space-between;
+}
+.info-animal{text-align: center;color: #f1bd45;background-color:#2271b3 ;} 
+.detalle-title{text-align: center; }
+.animalito-img-cards-detalle{
+    width: 30px;
+    max-width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.animalito-img-cards-titular{
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.boton-details{ text-align: right; background-color: #f1bd45;
+    border-radius: 5px;
+    padding: 5px;
+    
+    transition: 1s all;}
+.boton-details:hover{ background-color: #94be68;
+        transform: scale(0.98);}
+        
+.info-principal{display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    flex-direction:row;
+    gap:30px; 
+     margin-top: 135px;  
+    box-sizing: border-box;
+}
+.image-principal i{
+    width: 30px;
+   vertical-align:100px;
+    transition: 1s all;
+    border: solid;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.image-principal i:hover{
+   background-color:#4dabab;
+}
+/* Estilos CarritoMascota.html */
+
+.main-section-carro {
+width: 100%;
+border: 2px ;
+padding: 50px;
+background-image:url(/img/fondocarro-01.png);
+background-size: cover;
+background-position: center center;
+margin-bottom: 20px;
+}
+
+.contenido-carro {
+    padding: 100px;
+    margin: 20px;   
 
 }
 
-/* Estilos CarritoMascota.html */
+.info-carro{
+    margin-left: 650px;
+    font-size: 18px;
+    color: #e7e9db;
+    font-weight: bold;
+    text-align: justify;
 
+}
+
+.boton-iniciar{ 
+    text-align: right; 
+    background-color: #4dabab;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s all;}
+.boton-iniciar:hover{ background-color: #ffffff;
+        transform: scale(0.98);}
+
+ .boton-registro{ 
+    text-align: right; 
+    background-color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+            transition: 1s all;}
+.boton-registro:hover{ background-color: #4dabab;
+                transform: scale(0.98);}
 
 
 
@@ -268,6 +368,7 @@ justify-content: space-between;
     .navbarLista{
         display: flex;
         justify-content: space-between;
+        
 
     }
     .navbarLista li{
@@ -310,20 +411,17 @@ justify-content: space-between;
     .boton{
         margin-top: 10px;
         background-color: #f1bd45;
-
         align-self: end;
         border-radius: 5px;
         padding: 5px;
         transition: 1s all;
     }
-    .contenedor-animalitos-cards{
+    .container-animales{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap : 30px  ;
-        margin-top: 30px;
-        width: 100%;
+       
+        gap: 20px;
     }
 }
 
@@ -517,3 +615,18 @@ input[type="submit"]:hover{
         display: block;
         text-align: center;
       }
+    .animalito-card{
+        flex: 0 0 33.333333%;
+    }
+
+    .logo{
+        width : 33%;
+    }
+
+
+
+@media  (min-width: 1100px){
+    .logo{
+        width : 20%;
+    }
+}

@@ -6,13 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle Mascota</title>
     <link rel="stylesheet" href="/css/style.css">
+      <script src="https://kit.fontawesome.com/c9d22b43b9.js" crossorigin="anonymous"></script>
 </head>
-<body id="menu-detalle-mascota">
-    <h1>Detalle mascota</h1>
-    <div ><a href="/">Home</a></div> 
-    <div ><a href="/login"><h1>login</h1></a></div> 
-    <div ><a href="/registro"><h1>Registro</h1></a></div> 
-    <div ><a href="/detalle"><h1>Detallemascota</h1></a></div> 
-    <a href="/carro"><h1>Carritomascota</h1></a></div> 
-</body>
+<body>
+    
+     <header>
+         <div class="header-container">
+             <div class="contenedorImagen">
+                 <img src="/img/logo-ado.png" alt="" class="logo">
+             </div>
+             <nav class="header-navbar">
+                 <ul class="navbarLista">
+                     <li><a href="/">Home</a></li>
+                     <li><a href="/login">Login</a></li>
+                     <li><a href="/registro">Registro</a></li>
+                     <li><a href="/detalle">Detalle</a></li>
+                     <li><a href="/carro">Carrito</a></li>
+                 </ul>
+             </nav>
+         </div>
+     </header>
+    <main class="info-animal">  
+     <!-- <H1 class="detalle-title">Detalle de la mascota</H1> -->
+     <h1 class="Name-mascota">Max</h1>
+      <div class="image-principal">
+        <i class="fa-solid fa-arrow-left"></i> <img src="/img/perro1.jpg" alt="Perro max" class="animalito-img-cards-titular">  <i class="fa-solid fa-arrow-right"></i> 
+      </div>
+ 
+      <button class="boton-details" type="button" onclick="location.href='/carro'"> Agregar al Carrito</button> 
+ 
+       <div class="info-principal">
+         
+          <div class="details-sexo"> 
+            <h2>Sexo</h2>
+           <h2><i class="fa-sharp fa-solid fa-person"></i></h2>  
+          </div>
+ 
+           <div class="details-edad">
+            <h2>Edad</h2>
+           <h2><i class="fa-solid fa-4"></i></h2> 
+         </div>
+ 
+          <div class="details-vacunas">
+            <h2>Vacunas<h2>
+       <h2><i class="fa-solid fa-4"></i></h2>  
+         </div>
+ 
+          <div class="details-actitud">
+            <h2>Actitud<h2>
+            <h2><i class="fa-regular fa-face-smile"></i></h2> 
+          </div>
+ 
+          <div class="details-ciudad">
+            <h2>Ciudad<h2>
+         <p>Bogota,Colombia</p>
+         </div>
+ 
+   </div>
+   
+     </main>
+   <footer class="footer-container">
+ 
+     <div class="redesSociales">
+         <p> <a href=""> <i class="fa-brands fa-github fa-2x"></i>Github</a>  </p>
+         <p> <a href=""><i class="fa-brands fa-facebook fa-2x"></i>Facebook</a> </p>
+         <p><a href=""><i class="fa-brands fa-instagram fa-2x"></i>Instagram</a> </p>
+         <p><a href=""><i class="fa-solid fa-envelope fa-2x"></i> Correo</a></p>
+     </div>
+ 
+     <div class="footer-derechos">
+         <p>Copyright &copy; 2022 - Adopt me <i class="fa-solid fa-paw"></i></p>
+     </div>
+ 
+     <div class="footer-autores">
+         <p>Desarrollado por: <a href="">Kenneth Leonel,Juan Pablo Acosta,Sofia Triaca,Kristian Rojas</a></p>
+     </div>
+ 
+ </footer>
 </html>
