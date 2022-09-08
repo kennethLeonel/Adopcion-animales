@@ -34,7 +34,7 @@ app.get('/carro', (req, res) => {
         res.sendFile(path.join(__dirname, './views/carritoMascota.html'));
 });
 
-// Se levanta el servidor en el pyuerto 3030
+// Se levanta el servidor en el puerto 3030
 app.listen(3030, ()=>{
     console.log('Server prendio en el puerto 3030');
 })

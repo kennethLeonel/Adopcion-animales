@@ -6,15 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesion</title>
     <link rel="stylesheet" href="/css/style.css">
-   
-</head>
-<body>
-        <h1>Login</h1>
 
-        <a href="/">Home</a>
-        <a href="/login"><h1>login</h1></a>
-        <a href="/registro"><h1>Registro</h1></a>
-        <a href="/detalle"><h1>Detallemascota</h1></a>
-        <a href="/carro"><h1>Carritomascota</h1></a>
+        <!-- Font Monserrat-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+</head>
+<body id="body">
+
+    <header>
+        <div class="header-container">
+            <div class="contenedorImagen">
+                <!-- <p>Adopt me </p> -->
+                <img src="/img/logoOpcional.svg" alt="Logo mascotas" class="logo">
+            </div>
+            <nav class="header-navbar">
+                <ul class="navbarLista">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/registro">Registro</a></li>
+                    <li><a href="/detalle">Detalle</a></li>
+                    <li><a href="/carrito">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="center">
+        <h1>Ingresar</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Correo</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>Contraseña</label>
+            </div>
+            <div class="pass">Olvidaste tu contraseña?</div>
+            <input type="submit" value="Ingresa">
+            <div class="signup_link">
+                No eres miembro? <a href="/registro">Registrate!</a>
+            </div>
+
+            <!--Redes sociales-->
+
+            <div class="container2">
+                <form action="/action_page.php">
+                  <div class="row">
+                    <h3 class="social-title">Ingresa con tus redes sociales!</h3>
+                    </div>
+                      <a href="#" class="fb btn">
+                        <i class="fa fa-facebook fa-fw"></i>Facebook
+                      </a>
+                      <a href="#" class="twitter btn">
+                        <i class="fa fa-twitter fa-fw"></i>Twitter
+                      </a>
+                      <a href="#" class="google btn">
+                        <i class="fa fa-google fa-fw"></i>Google+
+                      </a>
+                    </div>
+                    
+              
+
+        </form>
+    </div>
 </body>
 </html>
