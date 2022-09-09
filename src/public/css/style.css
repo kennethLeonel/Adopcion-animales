@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
-
     text-decoration: none;
 }
 /*
@@ -229,7 +228,7 @@ footer{
 .animalito-img-cards{
     width: 230px;
     max-width: 270px;
-    height: 220px;
+    height: 200px;
     border-radius: 10px;
     box-sizing: border-box;
 }
@@ -375,10 +374,8 @@ margin-bottom: 20px;
         list-style: none;
         margin: 20px 15px;
         font-size: 18px;
-         text-decoration: none;
+        text-decoration: none;
         font-weight: bold;
-
-
     }
 
     .navbarLista li a{

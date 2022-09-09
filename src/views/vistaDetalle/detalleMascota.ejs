@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <%- include('../partials/head') %>
+    <title>Detalle Mascota</title>
+</head>
+<body>
+    
+    <%- include('../partials/navegacion') %> 
+    <main class="info-animal">  
+     <!-- <H1 class="detalle-title">Detalle de la mascota</H1> -->
+     <h1 class="Name-mascota"><%= mascota.nombre %></h1>
+      <div class="image-principal">
+        <i class="fa-solid fa-arrow-left"></i> <img src="<%= mascota.img %>" alt="imagen mascota" class="animalito-img-cards-titular">  <i class="fa-solid fa-arrow-right"></i> 
+      </div>
+ 
+      <button class="boton-details" type="button" onclick="location.href='/carro'"> Agregar al Carrito</button> 
+ 
+       <div class="info-principal">
+         
+          <div class="details-sexo"> 
+            <h2>Sexo</h2>
+            <p><%= mascota.sexo %></p>
+           <h2><i class="fa-sharp fa-solid fa-person"></i></h2>  
+          </div>
+ 
+           <div class="details-edad">
+            <h2>Edad</h2>
+            <p> <%= mascota.edad %> </p>
+           <!-- <h2><i class="fa-solid fa-4"></i></h2>  -->
+         </div>
+ 
+          <div class="details-vacunas">
+            <h2>Vacunas<h2>
+            <p><%= mascota.cantidadVacunas %></p>
+       <!-- <h2><i class="fa-solid fa-4"></i></h2>   -->
+         </div>
+ 
+          <div class="details-actitud">
+            <h2>Actitud<h2>
+            <p><%= mascota.actitud %></p>
+            <!-- <h2><i class="fa-regular fa-face-smile"></i></h2>  -->
+          </div>
+ 
+          <div class="details-ciudad">
+            <h2>Ciudad<h2>
+            <p><%= mascota.ciudad    %> </p>
+         </div>
+      
+  
+         <div class="details-ciudad">
+            <h2>País<h2>
+            <p><%=    mascota.pais    %> </p>
+        </div>
+
+      </div>
+   
+     </main>
+     <%- include('../partials/footer') %>
+</html>
