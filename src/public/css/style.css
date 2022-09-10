@@ -555,6 +555,20 @@ input[type="submit"]:hover{
     text-decoration: underline;
 
 }
+/* Estilos CRUD Admin */
+
+
+.menu-info{display: flex; flex-direction:row; justify-content: space-between; box-sizing: border-box; border: solid #A9A9A9; }
+ .informacion{background-color: #00A86B; display: flex; justify-content: space-between;}
+ .informacion button {background-color: #2271b3; color: #ffffff;} 
+ .menu-Etiquetas button{background-color: #00A86B;color: #ffffff;}
+.menu-Contacto i {margin: 5px; }
+.menu-Acciones i { margin: 5px;}
+
+
+
+
+
 
 /* redes sociales*/
 
