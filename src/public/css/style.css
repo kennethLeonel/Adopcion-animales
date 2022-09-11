@@ -358,73 +358,7 @@ margin-bottom: 20px;
 
 
 
-
-@media  (min-width: 768px){
-
-
-    /* Estilo Header */
-
-    .navbarLista{
-        display: flex;
-        justify-content: space-between;
-        
-
-    }
-    .navbarLista li{
-        list-style: none;
-        margin: 20px 15px;
-        font-size: 18px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .navbarLista li a{
-
-        color: #f1bd45;
-        text-decoration: none;
-        transition: 1s all;
-    }
-    .navbarLista li a:hover{
-        color: #94be68;
-        text-decoration: underline;
-
-    }
-    /* Footer */
-
-
-    /* index.html */
-    .contenido-introduccion{
-        padding: 20px;
-        width: 40%;
-        display:flex;
-        flex-direction: column;
-    }
-    .contenido-introduccion p{
-        margin-top: 10px;
-        font-size: 18px;
-
-        text-align: justify;
-    }
-    .boton{
-        margin-top: 10px;
-        background-color: #f1bd45;
-        align-self: end;
-        border-radius: 5px;
-        padding: 5px;
-        transition: 1s all;
-    }
-    .container-animales{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-       
-        gap: 20px;
-    }
-}
-
 /* Estilos Login + registro */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap');
 
 
 
@@ -679,6 +613,70 @@ input[type="submit"]:hover{
     }
 
 
+
+    @media  (min-width: 768px){
+
+
+        /* Estilo Header */
+    
+        .navbarLista{
+            display: flex;
+            justify-content: space-between;
+            
+    
+        }
+        .navbarLista li{
+            list-style: none;
+            margin: 20px 15px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        .navbarLista li a{
+    
+            color: #f1bd45;
+            text-decoration: none;
+            transition: 1s all;
+        }
+        .navbarLista li a:hover{
+            color: #94be68;
+            text-decoration: underline;
+    
+        }
+        /* Footer */
+    
+    
+        /* index.html */
+        .contenido-introduccion{
+            padding: 20px;
+            width: 40%;
+            display:flex;
+            flex-direction: column;
+        }
+        .contenido-introduccion p{
+            margin-top: 10px;
+            font-size: 18px;
+    
+            text-align: justify;
+        }
+        .boton{
+            margin-top: 10px;
+            background-color: #f1bd45;
+            align-self: end;
+            border-radius: 5px;
+            padding: 5px;
+            transition: 1s all;
+        }
+        .container-animales{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+           
+            gap: 20px;
+        }
+    }
+    
 
 @media  (min-width: 1100px){
     .logo{

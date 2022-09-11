@@ -8,7 +8,7 @@ const controladorCarro = require('../controllers/controladorCarro');
  const router = express.Router();
 
 
-router.get('/',  controladorCarro.carrito)
+router.get('/:id?',  controladorCarro.carrito)
 
 
 module.exports = router;
