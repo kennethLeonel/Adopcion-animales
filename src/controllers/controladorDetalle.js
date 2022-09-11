@@ -96,7 +96,7 @@ let controlador1 ={
         // res.sendFile(path.join(__dirname, './views/index.html'));
         let id = req.params.id;
         let mascota = mascotas.find(mascota => mascota.id == id);
-        console.log(mascota);
+        // console.log(mascota);
         res.render('./vistaDetalle/detalleMascota', {mascota: mascota});
     }
 }

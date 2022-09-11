@@ -99,7 +99,21 @@ let controlador ={
         let id = req.params.id;
         if (id != undefined) {
             let mascota = mascotas.find(mascota => mascota.id == id);
-            mascotasCarro.push(mascota);
+            if (mascotasCarro.length == 0) {
+                console.log('hey soy el primer dato')
+                mascotasCarro.push(mascota);
+            }else{
+                mascotasCarro.forEach(mascotaC => {
+                    if (mascotaC.id != mascota.id) {
+                        mascotasCarro.push(mascota);
+                        console.log('hey soy un dato nuevo');  
+                    }
+                    else{
+                        console.log('hey soy un dato repetido');  
+                    }
+                });
+            }
+       
             vacio = false;
             // if (mascotasCarro.length == 0) {
             //     mascotasCarro.push(mascota);
@@ -117,8 +131,8 @@ let controlador ={
             vacio = true;
             mascotasCarro  =[];
         }
-        console.log("hola estoy en carro");
-        console.log(mascotasCarro);
+        // console.log("hola estoy en carro");
+        // console.log(mascotasCarro);
         res.render('./vistaCarro/carritoMascota', {mascotasCarro: mascotasCarro, vacio: vacio});
     }
 }
