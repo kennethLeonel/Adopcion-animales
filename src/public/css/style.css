@@ -557,13 +557,55 @@ input[type="submit"]:hover{
 }
 /* Estilos CRUD Admin */
 
-
-.menu-info{display: flex; flex-direction:row; justify-content: space-between; box-sizing: border-box; border: solid #A9A9A9; }
- .informacion{background-color: #00A86B; display: flex; justify-content: space-between;}
+.informacion{background-color: #00A86B; display: flex; justify-content: space-between;}
  .informacion button {background-color: #2271b3; color: #ffffff;} 
- .menu-Etiquetas button{background-color: #00A86B;color: #ffffff;}
-.menu-Contacto i {margin: 5px; }
-.menu-Acciones i { margin: 5px;}
+
+
+.menu-info{
+    width: 100%;
+}
+.tabla-contenidos{
+   border:#000 1px solid;; 
+   width: 100%;
+
+ }
+ .tabla-contenidos caption{
+    font-size: 22px;
+    font-weight: bold;
+
+ }
+
+.tabla-contenidos tr {
+    text-align: center;
+  
+    width: 100%;
+   
+}
+
+.tabla-contenidos tr td{ 
+    
+
+    padding: 10px;
+}
+
+.what{
+    text-decoration: none;
+    color: #42cba5;
+}
+.correo{
+    text-decoration: none;
+    color: #7c817b;
+}
+.editar{
+    color: #ffc720;
+}  
+.eliminar{
+    color: #f5564a;
+}
+.ojo{
+    color: #00A86B;
+}
+
 
 
 

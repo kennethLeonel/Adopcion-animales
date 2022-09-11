@@ -32,6 +32,7 @@ app.use('/login', rutasLogin );
 app.use('/registro', rutasRegistro);
 // Se obtiene las rutas de carro de mascotas
 app.use('/carro', rutasCarro);
+
 // Se obtiene las rutas de administrador
 app.use('/admin', rutasAdmin);
 
