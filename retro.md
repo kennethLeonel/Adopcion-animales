@@ -25,3 +25,43 @@
         <p> Por ahora en este sprint 1 no se tuvo inconvenientes</p>
     </div>
 </section>
+
+
+<section>
+<h2>Sprint 2 </h2>
+    <div> 
+        <h3>Continuar haciendo.<h3>
+        <p> 
+            <ol>
+                <li> Vamos a continuar nuestra forma de trabajo, donde nos delegamos aspectos funcionales del proyecto con el fin de tener un orden y una cooperación entre todos los miembros del grupo.</li>
+                <li> Reuniones semanales para aclarar inconveniente y mirar que aspectos del proyecto faltan por terminar. </li>
+            </ol>
+        </p>
+    </div>
+    <div> 
+        <h3>Comenzar a hacer<h3>
+        <p> Aplicación Node.js+Express con:
+           <li> Home (index.html)</li>
+           <li> Detalle del producto (productDetail.html)</li>
+           <li> Carrito de compras (productCart.html)</li>
+           <li> Formulario de registro (register.html)</li>
+           <li> Formulario de login (login.html)</li>
+           <li> Hicimos todo esta estructura bajo el formato de estructura de archivos llamada MVC(Modelo-Vista-Controlador)</li></p>
+    </div>
+    <div> 
+        <h3>Hacer más.<h3>
+        <p>Tener mas comunicacion como equipo en las reuniones semanales</p>
+        </p>
+    </div>
+    <div> 
+        <h3>Hacer menos.<h3>
+        <p> llegar a la reunión sin inconvenientes (dudas, preguntas) que afecten el flujo del proyecto o avances de este </p>
+    </div>
+    <div> 
+        <h3>Dejar de hacer.<h3>
+        <p>
+            En este sprint 2 no se tuvo inconvenientes, pero si se menciono que todos debemos ser responsables con la revisión del tablero de actividades para que no se nos pase nada por alto, y que no reaciga esa responsabilidad en una sola persona. 
+         </p>
+    </div>
+     
+</section>
