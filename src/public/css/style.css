@@ -492,8 +492,8 @@ input[type="submit"]:hover{
 /* Estilos CRUD Admin */
 
 .informacion{background-color: #00A86B; display: flex; justify-content: space-between;}
- .informacion button {background-color: #2271b3; color: #ffffff;} 
-
+.informacion button {background-color: #2271b3; color: #ffffff;} 
+.buscar-animal{border: #000 solid 1px;}
 
 .menu-info{
     width: 100%;
@@ -539,12 +539,10 @@ input[type="submit"]:hover{
 .ojo{
     color: #00A86B;
 }
-
-
-
-
-
-
+/* Estilos FORM Admin */
+.main-info{text-align: center;}
+.main-info input{border: #000 solid 1px; margin: 10px;}
+.form-button{color: white;background-color: #2271b3;}
 
 /* redes sociales*/
 

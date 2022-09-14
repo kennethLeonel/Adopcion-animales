@@ -11,9 +11,9 @@
 
 <section>
 <nav class="informacion">Informacion de los animales 
-     <button class="agregaranimal">Agregar animal</button>  
+   <a href="/form">  <button class="agregaranimal">Agregar animal</button></a>  
 </nav>
- <p>Buscar:</p><input type="text">
+ <p>Buscar:</p><input type="text" class="buscar-animal">
 <div class="menu-info">
     <table class="tabla-contenidos">
         <caption >CRUD Tabla Mascotas</caption>
@@ -55,8 +55,8 @@
             <td> <%= mascota.pais  %>  </td>
             <td>  <a href="<%= mascota.contactoWhatsapp  %> " class="what"> <i class="fa-brands fa-whatsapp"></i> </a> </td>
             <td>  <a href="<%= mascota.contactoCorreo  %> " class="correo">  <i class="fa-solid fa-envelope"></i> </a> </td>
-            <td> <a href="" ><i class="fa-regular fa-pen-to-square editar"></i>  </a>  </td>
-            <td>  <a href=""> <i class="fa-solid fa-trash eliminar" ></i> </a>  </td>
+            <td> <a href="/form" ><i class="fa-regular fa-pen-to-square editar"></i>  </a>  </td>
+            <td>  <a href="/form"> <i class="fa-solid fa-trash eliminar" ></i> </a>  </td>
             <td> <a href="" > <i class="fa-solid fa-eye ojo"></i> </a> </td>
            
         </tr>

@@ -10,7 +10,7 @@ const rutasLogin =  require('./routes/rutasLogin');
 const rutasRegistro = require('./routes/rutasRegistro');
 const rutasCarro = require('./routes/rutasCarro');
 const rutasAdmin = require('./routes/admin/rutasAdmin');
-
+const rutasFormAdmin = require('./routes/admin/rutasFormAdmin');
 const path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -37,6 +37,8 @@ app.use('/carro', rutasCarro);
 app.use('/admin', rutasAdmin);
 
 
+// Se obtiene las rutas de formulario
+app.use('/form', rutasFormAdmin);
 
 
 
