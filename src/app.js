@@ -11,6 +11,7 @@ const rutasRegistro = require('./routes/rutasRegistro');
 const rutasCarro = require('./routes/rutasCarro');
 const rutasAdmin = require('./routes/admin/rutasAdmin');
 const rutasFormAdmin = require('./routes/admin/rutasFormAdmin');
+const rutasEditAdmin = require('./routes/admin/rutasEditAdmin');
 const path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -37,10 +38,12 @@ app.use('/carro', rutasCarro);
 app.use('/admin', rutasAdmin);
 
 
-// Se obtiene las rutas de formulario
+// Se obtiene las ruta del formulario que agrega
 app.use('/form', rutasFormAdmin);
 
 
+// Se obtiene las rutas del formulario que edita
+app.use('/edit', rutasEditAdmin);
 
 
 // Se levanta el servidor en el puerto 3030
