@@ -2,24 +2,124 @@
 <html lang="en">
 <head>
     <%- include('../partials/head') %>
-     <title>Form Adopta me</title>
+     <title>Agregar Mascota</title>
 </head>
 <body> <%- include('../partials/navegacion') %> 
-    <main class="main-info2">
+    <main >
         <div class="main-info">
-            <h2>Agregar Mascota</h2>
-            <div>Nombre:  </div><input type="text">
-            <div class="form-edad">Edad:  </div><input type="number">
-            <div class="form-sexo">Sexo:  </div><input type="text">
-            <div class="form-raza">Raza:  </div><input type="text">
-            <div class="form-tipo">Tipo de especie:  </div><input type="text">
-            <div class="form-adoptado">Adoptado:</div> verdadero<input type="checkbox"> falso <input type="checkbox">
-            <div class="form-vacunas">Vacunas:  </div><input type="number">
-            <div class="form-ciudad">Ciudad:  </div><input type="text">
-            <div class="form-pais">Pais: </div><input type="text">
-          <div> <button type="submit" class="form-button"onclick="location.href='/form'">Agregar info</button>
-            <button type="reset" class="form-button-delete" onclick="location.href='/form'">Borrar</button></div> 
-           </div>
+            <h2 class="tituloFormulariosAdmin">Agregar Mascota</h2>
+            <form action="/admin/agregarMascota" method="POST" class="formulariosAdmin">
+                <div>
+                    <label for="nombre">Nombre :</label> 
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre de la mascota" required>
+                </div>
+
+                <div class="form-edad">
+                      <label for="edad">Edad :</label>    
+                    <input type="number" name="edad" id="edad" placeholder="Edad de la mascota" required>
+                </div>
+
+                <div class="form-sexo"> 
+                    <p>Sexo :</p><br>
+                    <div class="contenedorcheck">
+                        <div>
+                            <label for="macho">Macho</label>
+                            <input type="radio" name="sexo" id="macho" value="Macho" required>
+                      
+                        </div>
+                        <div>
+                            <label for="hembra">Hembra</label>
+                            <input type="radio" name="sexo" id="hembra" value="Hembra" required>
+                       
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="raza">Raza :</label> 
+                    <input type="text" name="raza" id="raza" placeholder="Raza de la mascota" required>
+                </div>
+
+                <div>
+                    <label for="tipoMascota">Tipo de mascota :</label>
+                    <select name="tipoMascota" id="tipoMascota">
+                        <option value="-">Ninguno</option>
+                        <option value="gato">Gato</option>
+                        <option value="perro">Perro</option>
+                        <option value="caballos">Caballo</option>
+                        <option value="Hamster">Hamster</option>
+                        <option value="pajaros">Pájaros</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="descripcion">Descripción :</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción de la mascota" required></textarea>
+                </div>
+
+                <div>
+                    <label for="img">Imagen :</label>
+                    <input type="file" name="img" id="img" required>
+                </div>
+
+                <div>
+                    <label for="estado">Estado :</label><br>
+                    <div class="contenedorcheck">
+                        <div>
+                            <input type="radio" name="estado" id="adoptado" value="true" required>
+                            <label for="adoptado">Adoptado</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="estado" id="noAdoptado" value="false" required>
+                            <label for="noAdoptado">No Adoptado</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-vacunas">
+                    <label for="vacunas">Vacunas: </label>
+                    <input type="number" name="vacunas" id="vacunas" placeholder="cantidad vacunas de la mascota" required>
+                </div>
+                    
+                <div class="form-ciudad">Ciudad: 
+                    <select name="ciudad" id="ciudad">
+                        <option value="Bogota">Bogotá</option>
+                        <option value="Montevideo">MonteVideo</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="BuenosAires">Buenos Aires</option>
+                    </select>
+                </div>
+                
+                <div class="form-pais">
+                    <select name="pais" id="pais">
+                        <option value="Colombia">Colombia</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Argentina">Argentina</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="actitud">Actitud :</label> 
+                    <input type="text" name="actitud" id="actitud" placeholder="Actitud de la mascota" required>
+                </div>
+
+                <div> 
+                    <button type="submit" class="form-button">Agregar info</button>
+                    <button type="reset" class="form-button-delete" onclick="location.href='/form'">Borrar</button>
+                </div>
+
+            </form>
+        </div>
+            
+            
+           
+           
+       
+         
+          
+          
+            
+         
            
        
     </main>

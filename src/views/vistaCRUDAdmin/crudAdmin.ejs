@@ -11,7 +11,7 @@
 
 <section>
 <nav class="informacion">Informacion de los animales 
-   <a href="/form">  <button class="agregaranimal">Agregar animal</button></a>  
+   <a href="/admin/agregarMascota">  <button class="agregaranimal">Agregar animal</button></a>  
 </nav>
  <p>Buscar:</p><input type="text" class="buscar-animal">
 <div class="menu-info">
@@ -55,8 +55,17 @@
             <td> <%= mascota.pais  %>  </td>
             <td>  <a href="<%= mascota.contactoWhatsapp  %> " class="what"> <i class="fa-brands fa-whatsapp"></i> </a> </td>
             <td>  <a href="<%= mascota.contactoCorreo  %> " class="correo">  <i class="fa-solid fa-envelope"></i> </a> </td>
-            <td> <a href="/edit" ><i class="fa-regular fa-pen-to-square editar"></i>  </a>  </td>
-            <td>  <a href="/form"> <i class="fa-solid fa-trash eliminar" ></i> </a>  </td>
+            <td> <a href="/admin/editarMascota/<%=mascota.id%>" ><i class="fa-regular fa-pen-to-square editar"></i></a>
+
+            </td>
+            <td>
+                <form action="/admin/eliminarMascota/<%=mascota.id%>?_method=DELETE" method="POST">
+                    <button  type="submit"  class="eliminar">
+                        <i class="fa-regular fa-trash-alt"></i>
+                    </button>
+                </form>
+                  <!-- <a href="/admin/<%=mascota.id%>"> <i class="fa-solid fa-trash eliminar" ></i> </a>   -->
+            </td>
             <td> <a href="" > <i class="fa-solid fa-eye ojo"></i> </a> </td>
            
         </tr>

@@ -10,16 +10,20 @@ const rutasLogin =  require('./routes/rutasLogin');
 const rutasRegistro = require('./routes/rutasRegistro');
 const rutasCarro = require('./routes/rutasCarro');
 const rutasAdmin = require('./routes/admin/rutasAdmin');
-const rutasFormAdmin = require('./routes/admin/rutasFormAdmin');
-const rutasEditAdmin = require('./routes/admin/rutasEditAdmin');
+
 const path = require('path');
 
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // se utiliza el motor ejs
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
+//-------MIDDLEWARES------------
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
 //----------Direccionamiento de las rtutas-------------
 
@@ -37,13 +41,6 @@ app.use('/carro', rutasCarro);
 // Se obtiene las rutas de administrador
 app.use('/admin', rutasAdmin);
 
-
-// Se obtiene las ruta del formulario que agrega
-app.use('/form', rutasFormAdmin);
-
-
-// Se obtiene las rutas del formulario que edita
-app.use('/edit', rutasEditAdmin);
 
 
 // Se levanta el servidor en el puerto 3030
