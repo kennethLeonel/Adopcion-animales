@@ -542,6 +542,7 @@ input[type="submit"]:hover{
 /* Estilos FORM y EDIT Admin */
 .main-info{text-align: center;background-color: #2271b3;align-items: center;}
 .main-info input{border: #000 solid 1px; width: 20%;} 
+.form-file input{width: 33%;}
 .form-button{color: white;background-color: #2271b3;}
 .form-button-delete{color: white;background-color:#dd4b39;}
 /* redes sociales*/
