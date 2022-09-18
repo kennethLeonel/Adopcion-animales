@@ -14,6 +14,9 @@ let helperJson= {
     },
     escribirJson: (mascotas) => {
         fs.writeFileSync(rutaJson, JSON.stringify(mascotas, null, 4));
+    },
+    escribirImagen: (imagen) => {
+        fs.writeFileSync(path.join(__dirname, '/img/mascotas/' + imagen.name), imagen.data);
     }
 }
 

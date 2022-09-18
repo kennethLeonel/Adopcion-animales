@@ -1,5 +1,20 @@
 const helper = require('../../helpers/manipulacionJson')
 
+
+
+// const multer = require('multer');
+
+// var storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, './src/public/img/cargas/')
+//   },
+//   filename: function (req, file, cb) {
+//     cb(null, Date.now() + '.jpg') //Appending .jpg
+//   }
+// })
+
+// var upload = multer({ storage: storage })
+
 let controlador ={
     vista: (req, res) => {
         // res.sendFile(path.join(__dirname, './views/index.html'));
@@ -17,8 +32,9 @@ let controlador ={
         // res.sendFile(path.join(__dirname, './views/index.html'));
         res.render('./vistaCRUDAdmin/EditAdmin',{mascota: mascota});
     },
-    agregar: (req, res) => {
+    agregar:(req, res) => {
         let mascotas = helper.leerJson();
+        console.log(req.file, req.body)
         let mascota = {
             id: mascotas.length + 1,
             nombre: req.body.nombre,
@@ -31,8 +47,10 @@ let controlador ={
             ciudad: req.body.ciudad,
             pais: req.body.pais,
             descripcion: req.body.descripcion,
-            imagen: req.body.img,
+            img:"/img/" + req.file.originalname,
+            imagen: req.file,
             actitud: req.body.actitud,
+
 
         }
         mascotas.push(mascota);
@@ -54,7 +72,7 @@ let controlador ={
         mascota.ciudad = req.body.ciudad;
         mascota.pais = req.body.pais;
         mascota.descripcion = req.body.descripcion;
-        mascota.imagen = req.body.img;
+        mascota.img = req.body.img;
         mascota.actitud = req.body.actitud;
         helper.escribirJson(mascotas);
         res.redirect('/admin');
@@ -72,3 +90,6 @@ let controlador ={
 
 
 module.exports = controlador;
+
+
+
