@@ -655,8 +655,26 @@ input[type="submit"]:hover{
 
 
 
+    @media  (max-width: 768px){
+         /* Estilos DetallesMascota.html  */
+        .image-principal i{
+        width: 20px;
+       vertical-align:10px;
+        transition: 1s all;
+        border: solid;
+        border-radius: 10px;
+    }
+    .animalito-img-cards-titular{width: 45%;}
+    .info-principal{display: flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        flex-direction:row;
+         gap:20px; 
+         margin-top: 30px;  
+        box-sizing: border-box;
+    }
 
-
+    }
 
 
     @media  (min-width: 768px){
@@ -720,6 +738,8 @@ input[type="submit"]:hover{
            
             gap: 20px;
         }
+       
+        
     }
     
 
