@@ -89,5 +89,30 @@
         "descripcion": "Dan es un hamster muy alegre a la hora de jugar.",
         "img": "/img/hamster2.jpg",
         "actitud": "Alegre"
+    },
+    {
+        "id": 7,
+        "nombre": "Kuchau",
+        "edad": "3",
+        "sexo": "Macho",
+        "raza": "Perra criolla",
+        "tipoMascota": "gato",
+        "adoptado": "true",
+        "cantidadVacunas": "4",
+        "ciudad": "Bogota",
+        "pais": "Colombia",
+        "descripcion": "sdadsadsa",
+        "img": "/img/kenneth.jpg",
+        "imagen": {
+            "fieldname": "img",
+            "originalname": "kenneth.jpg",
+            "encoding": "7bit",
+            "mimetype": "image/jpeg",
+            "destination": "E:\\kenne\\Documents\\CursosProgramacion\\CursosDesarrolloWeb\\DigitalHouse\\proyectoMascotas\\Adopcion-animales\\src\\public\\img\\",
+            "filename": "kenneth.jpg",
+            "path": "E:\\kenne\\Documents\\CursosProgramacion\\CursosDesarrolloWeb\\DigitalHouse\\proyectoMascotas\\Adopcion-animales\\src\\public\\img\\kenneth.jpg",
+            "size": 20769
+        },
+        "actitud": "Perezoso"
     }
 ]
