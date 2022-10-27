@@ -583,6 +583,9 @@ input[type="submit"]:hover{
 .form-button:hover{
     background-color: #00A86B;
 }
+.error-msg{
+    display: flex; justify-content: center;
+}
 /* redes sociales*/
 
 
@@ -680,6 +683,7 @@ input[type="submit"]:hover{
         align-items: center;
     }
 }
+
 
 
     @media  (min-width: 768px){

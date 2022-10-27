@@ -5,18 +5,30 @@
      <title>Agregar Mascota</title>
 </head>
 <body> <%- include('../partials/navegacion') %> 
-    <main >
+    <main>
         <div class="main-info">
             <h2 class="tituloFormulariosAdmin">Agregar Mascota</h2>
+            <%if (locals.errors) {%>
+                <ul>
+   <% errors.forEach(function(error) {%>
+   <li class="error-msg"><%= error.msg %> </li>
+    <% }) %> 
+
+  </ul>
+          
+ <%}  %> 
             <form action="/admin/agregarMascota" method="POST" class="formulariosAdmin" enctype="multipart/form-data" >
                 <div>
                     <label for="nombre">Nombre :</label> 
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre de la mascota" required>
+                    <input type="text" name="nombre"  value="<%= locals.old ? old.name :'' %>" id="nombre" placeholder="Nombre de la mascota" >
+                    <% if(locals.errors2 && locals.errors2.name){ %> 
+                        <P> <%= errors2.name.msg %>  </P>
+                    <% } %> 
                 </div>
 
                 <div class="form-edad">
                       <label for="edad">Edad :</label>    
-                    <input type="number" name="edad" id="edad" placeholder="Edad de la mascota" required>
+                    <input type="number" name="edad" id="edad" placeholder="Edad de la mascota" >
                 </div>
 
                 <div class="form-sexo"> 
@@ -24,12 +36,12 @@
                     <div class="contenedorcheck">
                         <div>
                             <label for="macho">Macho</label>
-                            <input type="radio" name="sexo" id="macho" value="Macho" required>
+                            <input type="radio" name="sexo" id="macho" value="Macho" >
                       
                         </div>
                         <div>
                             <label for="hembra">Hembra</label>
-                            <input type="radio" name="sexo" id="hembra" value="Hembra" required>
+                            <input type="radio" name="sexo" id="hembra" value="Hembra" >
                        
                         </div>
                     </div>
@@ -37,7 +49,7 @@
 
                 <div>
                     <label for="raza">Raza :</label> 
-                    <input type="text" name="raza" id="raza" placeholder="Raza de la mascota" required>
+                    <input type="text" name="raza" id="raza" placeholder="Raza de la mascota" >
                 </div>
 
                 <div>
@@ -54,23 +66,23 @@
 
                 <div>
                     <label for="descripcion">Descripción :</label>
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción de la mascota" required></textarea>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción de la mascota" ></textarea>
                 </div>
 
                 <div>
                     <label for="img">Imagen :</label>
-                    <input type="file" name="img" id="img" required>
+                    <input type="file" name="img" id="img" >
                 </div>
 
                 <div>
                     <label for="estado">Estado :</label><br>
                     <div class="contenedorcheck">
                         <div>
-                            <input type="radio" name="estado" id="adoptado" value="true" required>
+                            <input type="radio" name="estado" id="adoptado" value="true" >
                             <label for="adoptado">Adoptado</label>
                         </div>
                         <div>
-                            <input type="radio" name="estado" id="noAdoptado" value="false" required>
+                            <input type="radio" name="estado" id="noAdoptado" value="false" >
                             <label for="noAdoptado">No Adoptado</label>
                         </div>
                     </div>
@@ -78,7 +90,7 @@
 
                 <div class="form-vacunas">
                     <label for="vacunas">Vacunas: </label>
-                    <input type="number" name="vacunas" id="vacunas" placeholder="cantidad vacunas de la mascota" required>
+                    <input type="number" name="vacunas" id="vacunas" placeholder="cantidad vacunas de la mascota" >
                 </div>
                     
                 <div class="form-ciudad">Ciudad: 
@@ -100,7 +112,7 @@
                 </div>
                 <div>
                     <label for="actitud">Actitud :</label> 
-                    <input type="text" name="actitud" id="actitud" placeholder="Actitud de la mascota" required>
+                    <input type="text" name="actitud" id="actitud" placeholder="Actitud de la mascota">
                 </div>
 
                 <div> 
