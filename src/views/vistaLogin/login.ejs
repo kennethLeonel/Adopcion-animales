@@ -9,7 +9,7 @@
     <main class="registro-main">
     <div class="center">
         <h1>Ingresar</h1>
-        <form method="post">
+        <form action="/login" method="POST" class="formulariosAdmin" enctype="multipart/form-data">
             <div class="txt_field">
                 <input type="text" required>
                 <span></span>
@@ -20,6 +20,11 @@
                 <span></span>
                 <label>Contraseña</label>
             </div>
+            <div class="txt_field">
+              <input type="checkbox">
+              <span></span>
+              <label>Recordame</label>
+          </div>
             <div class="pass">Olvidaste tu contraseña?</div>
             <input type="submit" value="Ingresa">
             <div class="signup_link">

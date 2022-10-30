@@ -8,22 +8,12 @@
     <main>
         <div class="main-info">
             <h2 class="tituloFormulariosAdmin">Agregar Mascota</h2>
-            <%if (locals.errors) {%>
-                <ul>
-   <% errors.forEach(function(error) {%>
-   <li class="error-msg"><%= error.msg %> </li>
-    <% }) %> 
-
-  </ul>
-          
- <%}  %> 
+        
             <form action="/admin/agregarMascota" method="POST" class="formulariosAdmin" enctype="multipart/form-data" >
                 <div>
                     <label for="nombre">Nombre :</label> 
-                    <input type="text" name="nombre"  value="<%= locals.old ? old.name :'' %>" id="nombre" placeholder="Nombre de la mascota" >
-                    <% if(locals.errors2 && locals.errors2.name){ %> 
-                        <P> <%= errors2.name.msg %>  </P>
-                    <% } %> 
+                    <input type="text" name="nombre"  value="nombre" id="nombre" placeholder="Nombre de la mascota" >
+                   
                 </div>
 
                 <div class="form-edad">

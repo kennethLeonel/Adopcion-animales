@@ -1,5 +1,5 @@
 const helper = require('../../helpers/manipulacionJson')
-const {validationResult} =require("express-validator");
+
 
 
 // const multer = require('multer');
@@ -33,15 +33,8 @@ let controlador ={
         res.render('./vistaCRUDAdmin/EditAdmin',{mascota: mascota});
     },
     agregar:(req, res) => {
-        const ValidationErrors= validationResult(req)
-   if (!ValidationErrors.isEmpty()) {
-   res.render("./vistaCRUDAdmin/FormAdmin",{
-   errors:ValidationErrors.array(),
-   errors2:ValidationErrors.mapped(),
-   old:req.body
-  })
-
-}else{
+        
+  {
         let mascotas = helper.leerJson();
         console.log(req.file, req.body)
         let mascota = {

@@ -9,6 +9,6 @@ const controladorLogin = require('../controllers/controladorLogin');
 
 
 router.get('/',  controladorLogin.login)
-
+router.post('/',  controladorLogin.procesoLogin)
 
 module.exports = router;
