@@ -24,7 +24,7 @@ let controlador ={
             };
 
             if(req.body.remember){
-                res.cookie("recordame", usuarioEncontrado.id)
+                res.cookie("remember", usuarioEncontrado.id)
             }
 
             res.redirect("./vistaCRUDadmin/FormAdmin");
@@ -32,7 +32,7 @@ let controlador ={
         },
         logout: (req, res)=>{
             req.session.destroy();
-            res.clearCookie("recordame");
+            res.clearCookie("remember");
             res.redirect("/");
         }
     }
