@@ -9,9 +9,8 @@ var storage = multer.diskStorage({
     cb(null, folder)
   },
   filename: function (req, file, cb) {
-    // path.extname(file.originalname)
     let imagen = file.originalname ;
-    cb(null, imagen) //Appending .jpg
+    cb(null, imagen) 
   }
 })
 

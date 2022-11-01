@@ -14,12 +14,15 @@ let controlador ={
                 id: usuarios.length + 1,
                 nombre: req.body.nombre,
                 email: req.body.email,
-                password:  bcryptjs.hashSync(req.body.password, 10 ),
-                imagen: req.file
+                password:bcryptjs.hashSync(req.body.password, 10 ),
+                img: "/img/" + req.file.originalname,
+                imagen:req.file
             }
             usuarios.push(usuario);
             helper.escribirJson(usuarios);
-            res.redirect('/login');}
+            res.redirect('/login');
+        }
+
         }
 
     }
