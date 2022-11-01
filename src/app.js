@@ -1,7 +1,9 @@
 
 const express = require('express');
 const app = express();
-
+const session = require("express-session");
+const cookieParser = require("cookie-parser");
+const methodOverride = require('method-override');
 //importaciones de los router
 
 const rutasIndex = require('./routes/rutasIndex');
@@ -14,11 +16,10 @@ const localsMiddleware = require("./middleware/localsMiddle");
 const recordameMiddleware = require("./middleware/recordameMiddle");
 const path = require('path');
 
-const methodOverride = require('method-override');
+
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
-const session = require("express-session");
-const cookieParser = require("cookie-parser");
+
 app.use(cookieParser());
 app.use(session({
   secret:"Secreto",

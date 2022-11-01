@@ -15,14 +15,11 @@ let controlador ={
                 nombre: req.body.nombre,
                 email: req.body.email,
                 password:bcryptjs.hashSync(req.body.password, 10 ),
-                img: "/img/" + req.file.originalname,
-                imagen:req.file
+                img: "/img/" + req.file.originalname
             }
             usuarios.push(usuario);
             helper.escribirJson(usuarios);
-            res.redirect('/login');
-        }
-
+            res.redirect('/login');}
         }
 
     }

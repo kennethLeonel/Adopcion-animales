@@ -11,30 +11,17 @@ let controlador ={
 
         const usuario = helper.leerJson();
         const usuarioEncontrado = usuario.find(function(usuario){
-            return usuario.email == req.body.email && bcryptjs.compareSync(req.body.password, user.password)
+            return usuario.email == req.body.email && bcryptjs.compareSync(req.body.password, usuario.password)
         })
 
         if(!usuarioEncontrado){
-            return res.render('./vistaLogin/login', { errorLogin: 'No Existe el usuario!' });
+            return res.render('./vistaLogin/login');
         }else{
-            req.session.usuarioLogueado = {
-                id: usuarioEncontrado.id,
-                name: usuarioEncontrado.name,
-                email: usuarioEncontrado.email,
-            };
-
-            if(req.body.remember){
-                res.cookie("remember", usuarioEncontrado.id)
-            }
-
-            res.redirect("./vistaCRUDadmin/FormAdmin");
+           res.redirect("/admin");
         }
         },
-        logout: (req, res)=>{
-            req.session.destroy();
-            res.clearCookie("remember");
-            res.redirect("/");
-        }
+    
+       
     }
 
 
