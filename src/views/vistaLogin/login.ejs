@@ -11,20 +11,27 @@
         <h1>Ingresar</h1>
         <form method="POST" action="/login"  class="formulariosAdmin">
             <div class="txt_field">
-                <input type="email" name="email" required>
+                <input type="email" name="email"  >
                 <span></span>
                 <label>Correo Electronico</label>
-            </div>
+            </div>  
+            <% if(locals.errors && locals.errors.email){ %>
+                    <p class="msg-error"> <%= locals.errors.email.msg %> </p>
+                  <% } %> 
             <div class="txt_field">
-                <input type="password" name="password" required>
+                <input type="password" name="password" >
                 <span></span>
                 <label>Contraseña</label>
             </div>
+            <% if(locals.errors && locals.errors.password){ %>
+                    <p class="msg-error"> <%= locals.errors.password.msg %> </p>
+                  <% } %> 
             <div class="txt_field">
               <input type="checkbox" name="remember">
               <span></span>
               <label>Recordame</label>
           </div>
+         
             <div class="pass">Olvidaste tu contraseña?</div>
             <input type="submit" value="Ingresa">
             <div class="signup_link">

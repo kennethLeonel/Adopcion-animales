@@ -13,27 +13,37 @@
                 <form method="post">
     
                     <div class="txt_field">
-                        <input type="text" name="nombre"  id="nombre" required>
+                        <input type="text" name="nombre"  id="nombre" >
                         <span></span>
                         <label>Nombre y apellido</label>
                     </div>
-                    
+                    <% if(locals.errors && locals.errors.nombre){ %>
+                        <p class="msg-error"> <%= errors.nombre.msg %>  </p>
+                      <% } %> 
                     <div class="txt_field">
-                        <input type="email" name="email"  id="email" required>
+                        <input type="email" name="email"  id="email" >
                         <span></span>
                         <label>Correo</label>
                     </div>
+                    <% if(locals.errors && locals.errors.email){ %>
+                        <p> <%= errors.email.msg %>  </p>
+                      <% } %> 
                     <div class="txt_field">
-                        <input type="password" name="password"  id="password" required>
+                        <input type="password" name="password"  id="password" >
                         <span></span>
                         <label>Contraseña</label>
                     </div>
+                    <% if(locals.errors && locals.errors.password){ %>
+                        <p> <%= errors.password.msg %>  </p>
+                      <% } %> 
                     <div class="txt_field">
-                      <input type="file" name="img"  id="img"  required>
+                      <input type="file" name="img"  id="img"  >
                       <span></span>
                       <label for="imagen">Agregar imagen</label>
                   </div>
-                  
+                  <% if(locals.errors && locals.errors.img){ %>
+                    <p> <%= errors.img.msg %>  </p>
+                  <% } %> 
                     <input type="submit" value="Registro">
                     <div class="signup_link">
                         Ya eres miembro? <a href="/login">Inicia sesion!</a>

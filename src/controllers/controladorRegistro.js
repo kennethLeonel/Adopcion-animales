@@ -1,5 +1,6 @@
 const helper = require('../helpers/usuariosJson')
 const bcryptjs = require("bcryptjs");
+const {validationResult}=require("express-validator")
 let controlador ={
     registro: (req, res) => {
         // res.sendFile(path.join(__dirname, './views/index.html'));
@@ -7,7 +8,11 @@ let controlador ={
         res.render('./vistaRegistro/registro');
     },
     procesoRegistro:(req,res)=>{
-        {
+        {const error = validationResult(req)
+            if(!error.isEmpty()){
+                
+               return res.render("./vistaRegistro/registro", { errors: error.mapped(), old: req.body , milanesa: "123"})
+            }
             let usuarios = helper.leerJson();
             console.log(req.file, req.body)
             let usuario = {
@@ -19,7 +24,9 @@ let controlador ={
             }
             usuarios.push(usuario);
             helper.escribirJson(usuarios);
-            res.redirect('/login');}
+            res.redirect('/login');
+        
+        }
         }
 
     }

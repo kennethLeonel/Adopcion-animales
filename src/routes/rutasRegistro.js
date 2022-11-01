@@ -18,12 +18,12 @@ let upload = multer({ storage: storage })
 
 // se importa el controlador de registro
 const controladorRegistro = require('../controllers/controladorRegistro');
-
+const validaciones = require("../validations/validacionRegistro");
 
 const router = express.Router();
 
 
 router.get('/',  controladorRegistro.registro)
-router.post('/', upload.single('img'), controladorRegistro.procesoRegistro);
+router.post('/', upload.single('img'),validaciones.validacionesRegistro, controladorRegistro.procesoRegistro);
 
 module.exports = router;
