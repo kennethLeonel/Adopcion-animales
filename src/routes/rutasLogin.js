@@ -10,5 +10,5 @@ const validaciones = require("../validations/validacionesLogin");
 
 router.get('/',  controladorLogin.login)
 router.post('/', validaciones.validacionesLogin,  controladorLogin.procesoLogin)
-
+router.get("/logout/", controladorLogin.logout);
 module.exports = router;

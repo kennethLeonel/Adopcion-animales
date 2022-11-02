@@ -26,7 +26,7 @@
                         <label>Correo</label>
                     </div>
                     <% if(locals.errors && locals.errors.email){ %>
-                        <p> <%= errors.email.msg %>  </p>
+                        <p class="msg-error"> <%= errors.email.msg %>  </p>
                       <% } %> 
                     <div class="txt_field">
                         <input type="password" name="password"  id="password" >
@@ -34,7 +34,7 @@
                         <label>Contraseña</label>
                     </div>
                     <% if(locals.errors && locals.errors.password){ %>
-                        <p> <%= errors.password.msg %>  </p>
+                        <p class="msg-error"> <%= errors.password.msg %>  </p>
                       <% } %> 
                     <div class="txt_field">
                       <input type="file" name="img"  id="img"  >
@@ -42,7 +42,7 @@
                       <label for="imagen">Agregar imagen</label>
                   </div>
                   <% if(locals.errors && locals.errors.img){ %>
-                    <p> <%= errors.img.msg %>  </p>
+                    <p class="msg-error"> <%= errors.img.msg %>  </p>
                   <% } %> 
                     <input type="submit" value="Registro">
                     <div class="signup_link">

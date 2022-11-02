@@ -19,15 +19,28 @@ let controlador ={
         })
 
         if(!usuarioEncontrado){
-            return res.render('./vistaLogin/login');
+            return res.render('./vistaLogin/login',{ errorLogin: 'Credenciales invalidas!'});
         }else{
            
             
+            req.session.usuarioLogueado = {
+                id: usuarioEncontrado.id,
+                nombre: usuarioEncontrado.nombre,
+                email: usuarioEncontrado.email,
+            };
 
-            res.redirect("/admin");
+            if(req.body.recordarme){
+                res.cookie("recordarme", usuarioEncontrado.id)
+            }
+
+            res.redirect("/");
         }
         },
-       
+        logout: (req, res)=>{
+            req.session.destroy();
+            res.clearCookie("recordarme");
+            res.redirect("/");
+        }
     }
 
 
