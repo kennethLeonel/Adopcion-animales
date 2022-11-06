@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <title><%= usuario.nombre %></title>
+</head>
+<body>
+    <%- include('../partials/navegacion') %>
+    <main class="registro-main">
+    <div class="center">
+        <form  class="formulariosAdmin">
+        <img src="<%= usuario.img %>" alt="imagen usuario" class="animalito-img-cards-titular">
+         <div><%= usuario.nombre %></div>
+         <div><%= usuario.email %></div>
+         
+        </form>
+    </div>
+
+    </main>
+    <%- include('../partials/footer') %>
+    
+</body>
+</html>

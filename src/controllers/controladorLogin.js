@@ -33,7 +33,7 @@ let controlador ={
                 res.cookie("recordarme", usuarioEncontrado.id)
             }
 
-            res.redirect("/");
+            res.redirect("/admin");
         }
         },
         logout: (req, res)=>{

@@ -12,6 +12,7 @@ const rutasLogin =  require('./routes/rutasLogin');
 const rutasRegistro = require('./routes/rutasRegistro');
 const rutasCarro = require('./routes/rutasCarro');
 const rutasAdmin = require('./routes/admin/rutasAdmin');
+const rutasUsuario = require('./routes/rutasUsuario');
 const localsMiddleware = require("./middleware/localsMiddle");
 const recordameMiddleware = require("./middleware/recordameMiddle");
 const path = require('path');
@@ -48,10 +49,10 @@ app.use('/registro', rutasRegistro);
 // Se obtiene las rutas de carro de mascotas
 app.use('/carro', rutasCarro);
 
-// Se obtiene las rutas de administrador
+// Se obtiene las rutas de usuario
 app.use('/admin', rutasAdmin);
 
-
+app.use('/usuario', rutasUsuario);
 
 // Se levanta el servidor en el puerto 3030
 app.listen(3030, ()=>{
