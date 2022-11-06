@@ -13,14 +13,25 @@ var storage = multer.diskStorage({
 
   },
   filename: function (req, file, cb) {
-    // path.extname(file.originalname)
-    let imagen = file.originalname ;
-  
-    cb(null, imagen) //Appending .jpg
+      let imagen = file.originalname ;
+      cb(null, imagen)
+
+
   }
 })
 
-let upload = multer({ storage: storage })
+let upload = multer({ storage: storage,
+  fileFilter: (req, file, cb) => {
+    let acceptedExtensions = ['.jpg', '.png', '.gif' , '.jpeg'];
+    let fileExtension = path.extname(file.originalname);
+    if (acceptedExtensions.includes(fileExtension)) {
+      cb(null, true)
+    } else{
+      cb(null, false)
+    }
+
+  },
+ })
 
 
 
