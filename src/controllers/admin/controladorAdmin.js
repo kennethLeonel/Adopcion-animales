@@ -1,20 +1,5 @@
 const helper = require('../../helpers/manipulacionJson')
 
-
-
-// const multer = require('multer');
-
-// var storage = multer.diskStorage({
-//   destination: function (req, file, cb) {
-//     cb(null, './src/public/img/cargas/')
-//   },
-//   filename: function (req, file, cb) {
-//     cb(null, Date.now() + '.jpg') //Appending .jpg
-//   }
-// })
-
-// var upload = multer({ storage: storage })
-
 let controlador ={
     vista: (req, res) => {
         // res.sendFile(path.join(__dirname, './views/index.html'));
@@ -33,10 +18,9 @@ let controlador ={
         res.render('./vistaCRUDAdmin/EditAdmin',{mascota: mascota});
     },
     agregar:(req, res) => {
-        
-  {
         let mascotas = helper.leerJson();
         console.log(req.file, req.body)
+
         let mascota = {
             id: mascotas.length + 1,
             nombre: req.body.nombre,
@@ -49,15 +33,14 @@ let controlador ={
             ciudad: req.body.ciudad,
             pais: req.body.pais,
             descripcion: req.body.descripcion,
-            img:"/img/" + req.file.originalname,
+            img:"/img/" + req.file?.originalname,
             imagen: req.file,
             actitud: req.body.actitud,
-
-
         }
+
         mascotas.push(mascota);
         helper.escribirJson(mascotas);
-        res.redirect('/admin');}
+        res.redirect('/admin');
     },
     editar: (req, res) => {
         let mascotas = helper.leerJson();

@@ -7,17 +7,19 @@ var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     let folder = path.join(__dirname, '../../public/img/');
     cb(null, folder)
+
   },
   filename: function (req, file, cb) {
     // path.extname(file.originalname)
     let imagen = file.originalname ;
+  
     cb(null, imagen) //Appending .jpg
   }
 })
 
 let upload = multer({ storage: storage })
 
-// se importa el controlador de registro
+// se importa el controlador de admin
 const controladorAdmin = require('../../controllers/admin/controladorAdmin');
 
 

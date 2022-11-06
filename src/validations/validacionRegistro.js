@@ -1,35 +1,34 @@
-const helper=require("../helpers/usuariosJson")
+const helper = require("../helpers/usuariosJson")
 const { body } = require('express-validator');
+const path = require('path');
 module.exports = {
-    validacionesRegistro: [ 
-    body("nombre")
-        .notEmpty()
-        .withMessage("Campo nombre incompleto"),
-    body("email")
-        .notEmpty()
-        .withMessage("Campo email incompleto")
-        .isEmail()
-        .withMessage("formato de email invalido")
-        .custom(function(value, {req}){
-            const usuarios = helper.leerJson()
-            const usuarioEncontrado = usuarios.find(function(usuario){
-                return usuario.email == value;
-            })
-            if(usuarioEncontrado){
-                return false
-            }else{
-                return true
-            }
-        }).withMessage("Email ya registrado"),
-    body("password")
-        .notEmpty()
-        .withMessage("Campo password incompleto"),
-        body("img")
+    validacionesRegistro: [
+        body("nombre")
             .notEmpty()
-            .withMessage("Tienes que subir una imagen").custom((value, { req }) => {
+            .withMessage("Campo nombre incompleto"),
+        body("email")
+            .notEmpty()
+            .withMessage("Campo email incompleto")
+            .bail()
+            .isEmail()
+            .withMessage("formato de email invalido")
+            .custom(function (value, { req }) {
+                const usuarios = helper.leerJson()
+                const usuarioEncontrado = usuarios.find(usuario => usuario.email == value)
+                if (usuarioEncontrado) {
+                    throw new Error('Email ya registrado')
+                } else {
+                    return true
+                }
+            }),
+        body("password")
+            .notEmpty()
+            .withMessage("Campo password incompleto"),
+        body("imagen")
+            .custom((value, { req }) => {
                 let file = req.file;
                 let acceptedExtensions = ['.jpg', '.png', '.gif'];
-        
+
                 if (!file) {
                     throw new Error('Tienes que subir una imagen');
                 } else {
@@ -38,7 +37,7 @@ module.exports = {
                         throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
                     }
                 }
-        
+
                 return true;
             })
     ]

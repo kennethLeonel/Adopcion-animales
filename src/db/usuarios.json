@@ -4,5 +4,12 @@
         "nombre": "Juan Pablo ",
         "email": "acostajuan678@gmail.com",
         "password": "$2a$10$0ASNwKtt834/eQy17Abx9ODozA9L6sGw4H5K1Berz9XEYedyBXJ5m"
+    },
+    {
+        "id": 2,
+        "nombre": "Kenneth",
+        "email": "kennethleo1@hotmail.com",
+        "password": "$2a$10$Ear7Cc3OXTPXdndVC37AzO/eckG1HYF1R9kJd.by7H0LbBAU.Z/92",
+        "img": "/img/users/kenneth.jpg"
     }
 ]
