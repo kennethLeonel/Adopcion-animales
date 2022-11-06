@@ -8,16 +8,18 @@
             <nav class="header-navbar">
                 <ul class="navbarLista">
                     <li><a href="/">Home</a></li>
+                    <li><a href="/carro">Carrito</a></li>
                     <% if(!locals.usuario){ %>
                     <li><a href="/login">Ingresar</a></li>
                     <li><a href="/registro">Registrarse</a></li>
+                    
                     <% }else{ %>
                         
                           <li> <a href="/login/logout">Cerrar sesion</a> </li>
-                          
+                          <li> <a href=""> <%= usuario.nombre%></a> </li>
                                        
                         <% } %> 
-                    <li><a href="/carro">Carrito</a></li>
+                   
                 </ul>
             </nav>
         </div>
