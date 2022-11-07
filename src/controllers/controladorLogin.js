@@ -27,13 +27,14 @@ let controlador ={
                 id: usuarioEncontrado.id,
                 nombre: usuarioEncontrado.nombre,
                 email: usuarioEncontrado.email,
+                img: usuarioEncontrado.img,
             };
 
             if(req.body.recordarme){
                 res.cookie("recordarme", usuarioEncontrado.id)
             }
 
-            res.redirect("/admin");
+            res.redirect("/usuario");
         }
         },
         logout: (req, res)=>{

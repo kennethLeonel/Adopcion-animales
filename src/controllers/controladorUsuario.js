@@ -1,8 +1,9 @@
 const helper = require('../helpers/usuariosJson')
 let controlador ={
     usuario: (req, res) => {
-       
-        res.render('./vistaUsuario/usuario');
+        let usarioActual = req.session.usuarioLogueado;
+        console.log(usarioActual);
+        res.render('./vistaUsuario/usuario' );
     }
 }
 
