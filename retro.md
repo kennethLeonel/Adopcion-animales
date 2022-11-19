@@ -68,7 +68,7 @@
         
         
 <section>
-<h2>Sprint 3 </h2>
+<h2>Sprint 3</h2>
     <div> 
         <h3>Continuar haciendo.<h3>
         <p> 
@@ -79,9 +79,7 @@
         </p>
     </div>
     <div> 
-        
         <h3>Comenzar a hacer<h3>
-            
         <p> Aplicación Node.js+Express+EJS con:
       <li>Archivos parciales (head, header, footer, etc.)<li>
       <li>Home<li>
@@ -93,25 +91,18 @@
       <li>Se pudo hacer hacer toda la estructura<li></p>
     </div>
     <div> 
-        
         <h3>Hacer más.<h3>
-            
         <p>Tener mas comunicacion como equipo en las reuniones semanales por cualquier medio</p>
         </p>
     </div>
     <div> 
-        
         <h3>Hacer menos.<h3>
-            
-        <p> llegar a la reunión sin inconvenientes (dudas, preguntas) que afecten el flujo del proyecto o avances de este </p>
+         <p> llegar a la reunión sin inconvenientes (dudas, preguntas) que afecten el flujo del proyecto o avances de este </p>
     </div>
     <div> 
-        
         <h3>Dejar de hacer.<h3>
-            
         <p>
             En el sprint 3 tuvo inconvenientes en cuanto a la forma de hacer.Que no reaciga esa responsabilidad en una sola persona y que sea mas colaborativa 
          </p>
     </div>
-     
 </section>
