@@ -81,14 +81,14 @@
     <div> 
         <h3>Comenzar a hacer<h3>
         <p> Aplicación Node.js+Express+EJS con:
-      <li>Archivos parciales (head, header, footer, etc.)<li>
-      <li>Home<li>
-      <li>Listado de productos<li>
-      <li>Detalle del producto<li>
-      <li>Carrito de productos<li>
-      <li>Formulario de registro y login<li>
-      <li>Formulario de carga y edición de productos<li>
-      <li>Se pudo hacer hacer toda la estructura<li></p>
+      <li>Archivos parciales (head, header, footer, etc.)</li>
+      <li>Home</li>
+      <li>Listado de productos</li>
+      <li>Detalle del producto</li>
+      <li>Carrito de productos</li>
+      <li>Formulario de registro y login</li>
+      <li>Formulario de carga y edición de productos</li>
+      <li>Se pudo hacer hacer toda la estructura</li></p>
     </div>
     <div> 
         <h3>Hacer más.<h3>
