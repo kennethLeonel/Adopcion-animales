@@ -16,14 +16,14 @@
 
 <section>
 <h2> reunión 12 de Noviembre  </h2>
-<ol> 
+<ul> 
     <li> se reunieron juan pablo,kenneth,kristian,sofia</li>
     <li> recien se empezo con el sprint 6</li>
     <li> teniamos problemas de conexion en discord pero se pudo solucionar con google meet</li>
     <li> Se hablo de las partes de los sprint 4,5 que se debia</li>
     <li> el sprint 6 que se debe hacer yvimos las tareas del sprint y dialogamos como llevarlas a cabo </li>
     <li> Hacer los archivos del weekly</li>
-</ol>
+</ul>
     <p>
    Debemos mejorar como grupo de trabajo en estos sprints ultimos   
     </p>
