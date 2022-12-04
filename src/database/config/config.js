@@ -1,9 +1,9 @@
 module.exports={
   "development": {
-    "username": "root",
-    "password": "",
-    "database": "Users_pets_db",
-    "host": "127.0.0.1",
+    "username": "UsuarioDBAdmin",
+    "password": "12345",
+    "database": "DatabaseAdoptMe",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {

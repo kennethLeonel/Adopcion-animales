@@ -4,6 +4,7 @@ const app = express();
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const methodOverride = require('method-override');
+
 //importaciones de los router
 
 const rutasIndex = require('./routes/rutasIndex');
@@ -30,6 +31,8 @@ app.use(session({
 // se utiliza el motor ejs
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
+
+
 
 //-------MIDDLEWARES------------
 app.use(express.urlencoded({extended:false}));

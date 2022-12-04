@@ -51,16 +51,17 @@
 
             <div class="container-ajustarAnimales">
                 <div class="container-animales" >
-                    <% mascotas.forEach(elemento => { %>
+                    <% for( let i = 0; i < mascotas.length; i++ ) { %>
                         <div class="animalito-card">
-                            <img src= '<%= elemento.img %>'  alt="iamgen" class="animalito-img-cards">
-                            <h3 > <%= elemento.nombre %> </h3>
+                            <img src= '/img/<%= mascotas[i].image %>'  alt="imagen" class="animalito-img-cards">
+                            <h3 > <%= mascotas[i].name %> </h3>
                             <p>
-                                <%= elemento.descripcion %>
+                                <%= mascotas[i].description %>
                             </p>
-                            <button class="boton2" type="button" onclick="location.href='/detalle/<%= elemento.id %>'">Ver más</button>
+                            <button class="boton2" type="button" onclick="location.href='/detalle/<%= mascotas[i].pet_id %>'">Ver más</button>
                         </div>
-                    <% }); %>
+                    <% } %>
+
                 </div>
             </div>
 
