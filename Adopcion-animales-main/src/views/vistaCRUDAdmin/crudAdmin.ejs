@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <title>Admin</title>
+</head>
+<body>
+    <%- include('../partials/navegacion') %> 
+<main>
+
+
+<section>
+<nav class="informacion">Informacion de los animales 
+   <a href="/admin/agregarMascota">  <button class="agregaranimal">Agregar animal</button></a>  
+</nav>
+ <p>Buscar:</p><input type="text" class="buscar-animal">
+<div class="menu-info">
+    <table class="tabla-contenidos">
+        <caption >CRUD Tabla Mascotas</caption>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Sexo</th>
+            <th>Raza</th>
+            <th>Tipo</th>
+            <th>Adoptado</th>
+            <th>vacunas</th>
+            <th>Actitud</th>
+            <th>Ciudad</th>
+            <th>Pais</th>
+            <th>Whatsapp</th>
+            <th>Correo</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+            <th>Detallar</th>
+       
+        </tr>
+
+
+   
+    <% mascotas.forEach(mascota => { %>
+
+        <tr>
+            <td> <%= mascota.id %> </td>
+            <td> <%= mascota.nombre  %>  </td>
+            <td> <%= mascota.edad  %>  </td>
+            <td> <%= mascota.sexo %> </td>
+            <td> <%= mascota.raza  %>  </td>
+            <td> <%= mascota.tipoMascota  %>  </td>
+            <td> <%= mascota.adoptado %> </td>
+            <td> <%= mascota.cantidadVacunas  %>  </td>
+            <td> <%= mascota.actitud  %>  </td>
+            <td> <%= mascota.ciudad %> </td>
+            <td> <%= mascota.pais  %>  </td>
+            <td>  <a href="<%= mascota.contactoWhatsapp  %> " class="what"> <i class="fa-brands fa-whatsapp"></i> </a> </td>
+            <td>  <a href="<%= mascota.contactoCorreo  %> " class="correo">  <i class="fa-solid fa-envelope"></i> </a> </td>
+            <td> <a href="/admin/editarMascota/<%=mascota.id%>" ><i class="fa-regular fa-pen-to-square editar"></i></a>
+
+            </td>
+            <td>
+                <form action="/admin/eliminarMascota/<%=mascota.id%>?_method=DELETE" method="POST">
+                    <button  type="submit"  class="eliminar">
+                        <i class="fa-regular fa-trash-alt"></i>
+                    </button>
+                </form>
+                  <!-- <a href="/admin/<%=mascota.id%>"> <i class="fa-solid fa-trash eliminar" ></i> </a>   -->
+            </td>
+            <td> <a href="" > <i class="fa-solid fa-eye ojo"></i> </a> </td>
+           
+        </tr>
+        
+
+    <% }); %>
+    </table>
+</div>
+
+
+</section>
+
+
+
+
+
+</main>
+
+<%- include('../partials/footer') %>
+
+</body>
+
+
+</html>
+

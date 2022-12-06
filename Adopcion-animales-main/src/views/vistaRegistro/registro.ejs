@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <title>Registrarse</title>
+</head>
+    <body>
+
+        <%- include('../partials/navegacion') %> 
+        <main  class="registro-main" >
+            <div class="center">
+                <h1>Registrarse</h1>
+                <form  action="/registro" method="POST"  enctype="multipart/form-data">
+                    <div class="txt_field">
+                        <input type="text" name="nombre"  id="nombre" value="<%= locals.old ? old.nombre : null  %>" >
+                        <span></span>
+                        <label>Nombre y apellido</label>
+                    </div>
+                    <% if(locals.errors && locals.errors.nombre){ %>
+                        <p class="msg-error"> <%= errors.nombre.msg %>  </p>
+                      <% } %> 
+
+                    <div class="txt_field">
+                        <input type="email" name="email"  id="email" value="<%= locals.old ? old.email : null  %>" >
+                        <span></span>
+                        <label>Correo</label>
+                    </div>
+                    <% if(locals.errors && locals.errors.email){ %>
+                        <p class="msg-error"> <%= errors.email.msg %>  </p>
+                      <% } %> 
+
+                    <div class="txt_field">
+                        <input type="password" name="password"  id="password" >
+                        <span></span>
+                        <label>Contraseña</label>
+                    </div>
+
+                    <% if(locals.errors && locals.errors.password){ %>
+                        <p class="msg-error"> <%= errors.password.msg %>  </p>
+                      <% } %> 
+
+                    <div class="txt_field">
+                      <input type="file" name="imagen"  id="imagen"  >
+                      <span> </span>
+                      <label for="imagen">Agregar imagen</label>
+                  </div>
+
+                  <% if(locals.errors && locals.errors.imagen){ %>
+                    <p class="msg-error"> <%= errors.imagen.msg %>  </p>
+                  <% } %> 
+                  
+                    <input type="submit" value="Registro">
+                    <div class="signup_link">
+                        Ya eres miembro? <a href="/login">Inicia sesion!</a>
+                    </div>
+    
+            </form>
+        </main>
+        <%- include('../partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+     <title>Editar Mascota</title>
+</head>
+<body> <%- include('../partials/navegacion') %> 
+    <main >
+        <div class="main-info">
+            <h2 class="tituloFormulariosAdmin">Editar Mascota</h2>
+            <form action="/admin/editarMascota/<%=mascota.id%>?_method=PUT" method="POST" class="formulariosAdmin">
+                <div>
+                    <label for="nombre">Nombre :</label> 
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre de la mascota" required value="<%=mascota.nombre %>">
+                </div>
+
+                <div class="form-edad">
+                      <label for="edad">Edad :</label>    
+                    <input type="number" name="edad" id="edad" placeholder="Edad de la mascota" required value="<%=mascota.edad %>">
+                </div>
+
+                <div class="form-sexo"> 
+                    <p>Sexo :</p><br>
+                    <div class="contenedorcheck">
+                        <% if(mascota.sexo == "Macho"){ %>
+                        <div>
+                            <label for="macho">Macho</label>
+                            <input type="radio" name="sexo" id="macho" value="Macho" required checked>
+                        </div>
+                        <div>
+                            <label for="hembra">Hembra</label>
+                            <input type="radio" name="sexo" id="hembra" value="Hembra" required>
+                        </div>
+                        <% }else{ %>
+                            <div>
+                                <label for="macho">Macho</label>
+                                <input type="radio" name="sexo" id="macho" value="Macho" required >
+                          
+                            </div>
+                            <div>
+                                <label for="hembra">Hembra</label>
+                                <input type="radio" name="sexo" id="hembra" value="Hembra" required checked>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="raza">Raza :</label> 
+                    <input type="text" name="raza" id="raza" placeholder="Raza de la mascota" required value="<%=mascota.raza %>">
+                </div>
+
+                <div>
+                    <label for="tipoMascota">Tipo de mascota :</label>
+                    <select name="tipoMascota" id="tipoMascota">
+
+                        <%  var tipos = ['Gato', 'Perro','Caballos','Hamster','Pajaros'] %>
+                        <% for(var i = 0; i < tipos.length; i++){ %>
+                            <% if(mascota.tipoMascota == tipos[i]){ %>
+                                <option value="<%=tipos[i] %>" selected> <%=tipos[i] %></option>
+                            <% }else{ %>
+                                <option value="<%=tipos[i] %>"> <%=tipos[i] %></option>
+                            <% } %>
+                        <% } %>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="descripcion">Descripción :</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"  required > 
+                        <%=mascota.descripcion %>
+                    </textarea>
+                </div>
+
+                <!-- Preguntar -->
+                <div>
+                    <label for="img">Imagen :</label>
+                    <input type="text" name="img" id="img" placeholder="URL de la imagen" required value="<%=mascota.img %>">
+                </div>
+
+
+                <div>
+                    <label for="estado">Estado :</label><br>
+                    <div class="contenedorcheck">
+                        <% if(mascota.adoptado == "true"){ %>
+                        <div>
+                            <input type="radio" name="estado" id="adoptado" value="true" required checked>
+                            <label for="adoptado">Adoptado</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="estado" id="noAdoptado" value="false" required>
+                            <label for="noAdoptado">No Adoptado</label>
+                        </div>
+                        <% }else{ %>
+                            <div>
+                                <input type="radio" name="estado" id="adoptado" value="true" required>
+                                <label for="adoptado">Adoptado</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="estado" id="noAdoptado" value="false" required checked>
+                                <label for="noAdoptado">No Adoptado</label>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div class="form-vacunas">
+                    <label for="vacunas">Vacunas: </label>
+                    <input type="number" name="vacunas" id="vacunas" placeholder="cantidad vacunas de la mascota" required value="<%=mascota.cantidadVacunas %>">
+                </div>
+                    
+                <div class="form-ciudad">Ciudad: 
+                    <select name="ciudad" id="ciudad">
+                        <%  var ciudades = ['Bogota', 'Montevideo','Barranquilla','Cordoba','BuenosAires'] %>
+                        <% for(var i = 0; i < ciudades.length; i++){ %>
+                            <% if(mascota.ciudad == ciudades[i]){ %>
+                                <option value="<%=ciudades[i] %>" selected> <%=ciudades[i] %></option>
+                            <% }else{ %>
+                                <option value="<%=ciudades[i] %>"> <%=ciudades[i] %></option>
+                            <% } %>
+                        <% } %>
+
+                    </select>
+                </div>
+                
+                <div class="form-pais">
+                    <select name="pais" id="pais">
+                        <%  var paises = ['Colombia', 'Uruguay','Argentina'] %>
+                        <% for(var i = 0; i < paises.length; i++){ %>
+                            <% if(mascota.pais == paises[i]){ %>
+                                <option value="<%=paises[i] %>" selected> <%=paises[i] %></option>
+                            <% }else{ %>
+                                <option value="<%=paises[i] %>"> <%=paises[i] %></option>
+                            <% } %>
+                        <% } %>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="actitud">Actitud :</label> 
+                    <input type="text" name="actitud" id="actitud" placeholder="Actitud de la mascota" required value="<%=mascota.actitud %>">
+                </div>
+
+                <div> 
+                    <button type="submit" class="form-button">Editar info</button>
+                    <button type="reset" class="form-button-delete" onclick="location.href='/form'">Borrar</button>
+                </div>
+
+            </form>
+        </div>
+            
+            
+           
+           
+       
+         
+          
+          
+            
+         
+           
+    </main>
+
+    <%- include('../partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+    <title>Carrito Mascotas</title>
+
+</head>
+<body>
+    <%- include('../partials/navegacion') %> 
+    <main>  
+        <h1 class="titulo">ADOPTAME </h1>
+        <% if (vacio == true) { %>
+        <section class="main-section-carro"> 
+        <div class="contenido-carro"> 
+            <div class="info-carro">
+                <h2>Tu carrito de Adoptame esta vacio.</h2>
+                <p> <a href="/"> Adopta la mascota adecuada para ti.
+                </p></a>
+            <button class="boton-iniciar" type="button" onclick="location.href='/login'"> Inicia sesión en tu cuenta</button> 
+            <button class="boton-registro" type="button" onclick="location.href='/registro'"> Regístrate ahora</button>   
+            </div>   
+        </div>
+        
+       
+        </section>
+        <% } else { %>
+        <section>
+            <h1> Productos</h1>
+            <div>
+                <% mascotasCarro.forEach(mascota => { %>
+                <p><%= mascota.nombre %></p>
+                <img src="<%= mascota.img %>" alt="item carro" class="animalito-img-cards"> 
+                <% }) %>  
+            </div>
+        </section>
+        <% } %>
+
+
+        <%- include('../partials/footer') %>
+       
+    </body>
+    </html>
