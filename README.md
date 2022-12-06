@@ -1,6 +1,6 @@
 # Adopcion-animales
 
-<h1>Nombre del proyecto. (por definir) </h1>
+<h1>Nombre del proyecto. Adoptame </h1>
 
   <section >
     <h2>¿En que consiste? </h2>
