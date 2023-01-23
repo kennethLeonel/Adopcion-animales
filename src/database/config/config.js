@@ -1,7 +1,7 @@
 module.exports={
   "development": {
-    "username": "UsuarioDBAdmin",
-    "password": "12345",
+    "username": "root",
+    "password": "",
     "database": "DatabaseAdoptMe",
     "host": "localhost",
     "dialect": "mysql"

@@ -1,4 +1,4 @@
-D<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <%- include('../partials/head') %>
@@ -12,15 +12,19 @@ D<!DOCTYPE html>
             <form action="/admin/agregarMascota" method="POST" class="formulariosAdmin" enctype="multipart/form-data" >
                 <div>
                     <label for="nombre">Nombre :</label> 
-                    <input type="text" name="nombre"  value="nombre" id="nombre" placeholder="Nombre de la mascota" >
+                    <input type="text" name="nombre"  id="nombre" placeholder="Nombre de la mascota" >
                    
                 </div>
-
+                <% if(locals.errors && locals.errors.nombre){ %>
+                    <p class="msg-error"> <%= errors.nombre.msg %>  </p>
+                  <% } %> 
                 <div class="form-edad">
                       <label for="edad">Edad :</label>    
                     <input type="number" name="edad" id="edad" placeholder="Edad de la mascota" >
                 </div>
-
+                <% if(locals.errors && locals.errors.edad){ %>
+                    <p class="msg-error"> <%= errors.edad.msg %>  </p>
+                  <% } %> 
                 <div class="form-sexo"> 
                     <p>Sexo :</p><br>
                     <div class="contenedorcheck">

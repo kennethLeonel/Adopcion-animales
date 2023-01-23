@@ -1,10 +1,18 @@
 const helper = require('../../helpers/manipulacionJson')
-
+const db = require('../../database/models');
+const {validationResult}=require("express-validator")
 let controlador ={
-    vista: (req, res) => {
+    vista: (req, res) => { db.Pets.findAll({}).then(pets => {
+            
+        res.render('./vistaCRUDAdmin/crudAdmin.ejs', {mascotas: pets});  
+
+    }).catch(error => {
+        console.log(error);
+    })
         // res.sendFile(path.join(__dirname, './views/index.html'));
-        let mascotas = helper.leerJson();
-        res.render('./vistaCRUDAdmin/crudAdmin',{mascotas: mascotas});
+        //forma antigua de hacerlo
+        // let mascotas = helper.leerJson();
+        // res.render('./vistaCRUDAdmin/crudAdmin',{mascotas: mascotas});
     },
     vistaAgregar: (req, res) => {
         // res.sendFile(path.join(__dirname, './views/index.html'));
@@ -18,6 +26,10 @@ let controlador ={
         res.render('./vistaCRUDAdmin/EditAdmin',{mascota: mascota});
     },
     agregar:(req, res) => {
+        const error = validationResult(req)
+        if(!error.isEmpty()){    
+            return res.render("./vistaCRUDAdmin/FormAdmin.ejs", { errors: error.mapped(), old: req.body })
+         }
         let mascotas = helper.leerJson();
         console.log(req.file, req.body)
 
