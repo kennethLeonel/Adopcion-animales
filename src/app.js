@@ -14,6 +14,8 @@ const rutasRegistro = require('./routes/rutasRegistro');
 const rutasCarro = require('./routes/rutasCarro');
 const rutasAdmin = require('./routes/admin/rutasAdmin');
 const rutasUsuario = require('./routes/rutasUsuario');
+// const apirutasUsuario = require('./routes/api/RutasUsuario');
+// const apirutasMascota = require('./routes/api/RutasMascota');
 const localsMiddleware = require("./middleware/localsMiddle");
 const recordameMiddleware = require("./middleware/recordameMiddle");
 const path = require('path');
@@ -40,7 +42,10 @@ app.use(express.json());
 app.use(recordameMiddleware);
 app.use(localsMiddleware);
 //----------Direccionamiento de las rtutas-------------
+// Rutas de las APIS
 
+// app.use('/api/usuario',  apirutasUsuario);
+// app.use('/api/mascota',apirutasMascota);
 // Se obtiene la rutas Home
 app.use('/',rutasIndex);
 // Se obtiene la rutas de detalle de la mascota

@@ -2,7 +2,19 @@ const helper = require('../../helpers/manipulacionJson')
 const db = require('../../database/models');
 const {validationResult}=require("express-validator")
 let controlador ={
-    vista: (req, res) => { db.Pets.findAll({}).then(pets => {
+    vista: (req, res) => { db.Pets.findAll({
+        include: [
+          {
+            model: Countries, as: 'country'
+          },
+          {
+            model: Cities, as: 'cities'
+          },
+          {
+            model: Razas, as: 'breed'
+          }
+        ]
+      }).then(pets => {
             
         res.render('./vistaCRUDAdmin/crudAdmin.ejs', {mascotas: pets});  
 
